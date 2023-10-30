@@ -18,26 +18,13 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{andersen_integrated_2011,Dube2022}
 \citation{goodman17}
-\citation{breckinridge_exoplanet_2018,Breck19,anche_analysis_2018,anche_inprep}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{, and polarization}{1}}
-\@writefile{loc}{\ChangesListline {added}{Added}{}{1}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{and open-source}{1}}
-\@writefile{loc}{\ChangesListline {added}{Added}{We develop a formal algorithm for the transfer-matrix method of GBD, and evaluate it against analytical results and traditional physical optics model to assess the suitability of GBD for high-contrast imaging simulations.}{1}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{speckle}{1}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{4 $\times 10^{-11}$}{1}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{, polarization,}{1}}
-\@writefile{loc}{\ChangesListline {added}{Added}{We developed this algorithm in an open-source software package and outlined a path for its continued development to increase the fidelity and flexibility of diffraction simulations using GBD.}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
-\newlabel{sect:intro}{{1}{1}{Introduction}{section.1}{}}
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Astrophysical Motivation}{1}{subsection.1.1}\protected@file@percent }
 \citation{Chippman15,anche_inprep}
 \citation{Harrington2017}
 \citation{Mather2004}
 \citation{Guyon_2006,2015ApJStark,2018Pueyo}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{of the telescope}{2}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{An example of this is the linear and shift-invariant assumption imposed on diffraction models of astronomical observatories. Ray aberrations (e.g. coma, astigmatism) have a field dependence, and consequently change across an observatory's field of view. However, diffraction integrals assume shift-invariance. This means that the aberrations do not change across the field of view and a separate ray trace model must be used to capture this effect.}{2}}
-\@writefile{loc}{\ChangesListline {added}{Added}{In the prior example, to capture the influence of optical aberrations a new ray trace must be performed and the optical path difference of the rays must be translated to a diffraction model for each point of interest in the field of view.}{2}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{Similarly, diffraction integrals are incapable of determining the effects of optical polarization. For example,}{2}}
 \citation{Lozi18}
 \citation{Males18}
 \citation{Femenia16}
@@ -46,14 +33,7 @@
 \citation{thompson_near_1994}
 \citation{horner_near-infrared_2004,Nircam_exoplanet}
 \citation{decadal_survey_on_astronomy_and_astrophysics_2020_astro2020_pathways_2021}
-\citation{Belikov2021}
-\citation{shaklan19}
 \citation{Howard22,Howard11}
-\@writefile{loc}{\ChangesListline {added}{Added}{Modern space telescopes also require integrated models to accurately predict the instrument behavior. For example, }{3}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{generally}{3}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{effects}{3}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{orders of magnitude dimmer than }{3}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{ meter}{3}}
 \citation{Krist93}
 \citation{goodman17}
 \citation{Krist07}
@@ -61,12 +41,6 @@
 \citation{por2018hcipy}
 \citation{Townson:19}
 \citation{Dube2022,Dube2019}
-\citation{Riggs18}
-\@writefile{loc}{\ChangesListline {added}{Added}{linearized }{4}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{integrate }{4}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Open-source Packages that currently support Fresnel diffraction include:}{4}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{and}{4}}
-\@writefile{loc}{\ChangesListline {added}{Added}{AOTools\cite  {Townson:19}, and prysm \cite  {Dube2022,Dube2019}}{4}}
 \citation{Allen2021OpenSource}
 \citation{krist_practical_2010,vanderbei_diffraction_2006}
 \citation{guyon_phase_nodate}
@@ -76,9 +50,6 @@
 \citation{Pyxel}
 \citation{pyklip}
 \citation{nmfimaging}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{The Fast Linearized Coronagraph Optimizer (FALCO) package\cite  {Riggs18} uses the same propagation physics to aid the design of these instruments by optimizing the commands sent to deformable mirrors to correct for the near-field diffraction effects that could limit the Roman Space Telescope (Roman) Coronagraph Instrument's sensitivity. }{5}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{, or PIAA }{5}}
-\@writefile{loc}{\ChangesListline {added}{Added}{To continue the development of integrated optical models, exploring the possibilities and limitations of new propagation physics is desirable.}{5}}
 \citation{Krist18}
 \citation{Krist18}
 \citation{Greynolds86}
@@ -86,285 +57,233 @@
 \citation{modeling_coherence_fred,Harvey15}
 \citation{bsp_in_codev}
 \citation{Worku17,Worku:18,Worku19}
-\@writefile{loc}{\ChangesListline {added}{Added}{An example of the typical integrated modeling pipeline for astronomical observatories outfitted with coronagraphs is shown in Figure \ref  {fig:modeling_flow}. The observatory is typically designed and modeled in ray trace software (e.g. CODE V, Zemax OpticStudio) to accurately model the wavefront in the observatory's exit pupil. Upon finalizing the design, the complex-valued exit pupil is decomposed into a functional representation (e.g. a set of polynomial coefficients, such as the Zernikes\cite  {krist_numerical_2015}) and passed to the entrance pupil of a coronagraph model constructed in an open-source, Fourier-based physical optics propagator (e.g. POPPY, PROPER, HCIPy). The front-end model computes the complex field distribution at the coronagraph mask, and then propagates the field past the mask to the image plane. The flux field is taken by a model of the detector (e.g. EMCCD Detect\cite  {Nemati2023}, Pyxel\cite  {Pyxel}) to create a simulated raw science image that can be post-processed (e.g. PyKLIP\cite  {pyklip}, NMF imaging\cite  {nmfimaging}).}{6}}
+\citation{greynolds_ten_2020}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Modeling flow inspired by the Structural Thermal Optical Performance (STOP) modeling process for the Roman Coronagraph \cite  {Krist18}. This diagram illustrates the different modeling regimes required to create a simulated image of an observatory. We aim to further integrate this modeling pipeline by creating an open-source Gaussian Beamlet Decomposition platform to unify the ray trace model of the observatory with the diffraction model of the coronagraph.}}{6}{figure.1}\protected@file@percent }
 \newlabel{fig:modeling_flow}{{1}{6}{Modeling flow inspired by the Structural Thermal Optical Performance (STOP) modeling process for the Roman Coronagraph \cite {Krist18}. This diagram illustrates the different modeling regimes required to create a simulated image of an observatory. We aim to further integrate this modeling pipeline by creating an open-source Gaussian Beamlet Decomposition platform to unify the ray trace model of the observatory with the diffraction model of the coronagraph}{figure.1}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Traditionally, GBD operates using the complex ray tracing algorithm described in the works by Greynolds\cite  {Greynolds86} and Harvey et al\cite  {Harvey15}}{6}}
-\citation{greynolds_ten_2020}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{An alternative approach called the transfer matrix algorithm was recently developed to improve GBD's viability for precision diffraction simulation by Worku and Gross}{7}}
-\@writefile{loc}{\ChangesListline {added}{Added}{To formally evaluate GBD as a modeling tool for astronomical instrumentation, a complete algorithm for its implementation is derived here.}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Gaussian Beamlet Decomposition}{7}{subsection.1.2}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{The operating principle of GBD is to decompose the field in the entrance pupil of an optical system (Figure \ref  {fig:gbd_essentials}a) into a finite set of Gaussian beams (Figure \ref  {fig:gbd_essentials}b). Their coherent sum (Figure \ref  {fig:gbd_essentials}c-d) approximates the initial field decomposition.}{7}}
 \citation{Siegman_1986}
 \citation{goodman17}
-\citation{krist_numerical_2015}
-\citation{Pyxel}
-\citation{pyklip}
-\citation{nmfimaging}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \added {Illustration of the operating principle of GBD in one dimension. The aperture function for traditional imaging systems is shown in (a) as a top-hat function of uniform amplitude. The decomposition of this function into a discrete set of Gaussian beams is shown in (b), which shows nine evenly-spaced Gaussian profiles before their coherent summation, which is shown in (c). The coherent sum (black) of these nine beamlets shows that the beamlets are incapable of perfectly reconstructing the original aperture function (dashed red), specifically the sharp edge and uniform amplitude. More beamlets are needed for a more accurate reconstruction, which is shown in (d) for 199 beamlets. The amplitude ripple has virtually vanished, and the field near the aperture edges is almost entirely recovered.}}}{8}{figure.2}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of the operating principle of GBD in one dimension. The aperture function for traditional imaging systems is shown in (a) as a top-hat function of uniform amplitude. The decomposition of this function into a discrete set of Gaussian beams is shown in (b), which shows nine evenly-spaced Gaussian profiles before their coherent summation, which is shown in (c). The coherent sum (black) of these nine beamlets shows that the beamlets are incapable of perfectly reconstructing the original aperture function (dashed red), specifically the sharp edge and uniform amplitude. More beamlets are needed for a more accurate reconstruction, which is shown in (d) for 199 beamlets. The amplitude ripple has virtually vanished, and the field near the aperture edges is almost entirely recovered.}{8}}
-\newlabel{fig:gbd_essentials}{{2}{8}{\added {Illustration of the operating principle of GBD in one dimension. The aperture function for traditional imaging systems is shown in (a) as a top-hat function of uniform amplitude. The decomposition of this function into a discrete set of Gaussian beams is shown in (b), which shows nine evenly-spaced Gaussian profiles before their coherent summation, which is shown in (c). The coherent sum (black) of these nine beamlets shows that the beamlets are incapable of perfectly reconstructing the original aperture function (dashed red), specifically the sharp edge and uniform amplitude. More beamlets are needed for a more accurate reconstruction, which is shown in (d) for 199 beamlets. The amplitude ripple has virtually vanished, and the field near the aperture edges is almost entirely recovered.}}{figure.2}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Under-sampling the field in the entrance pupil leads to artifacts in the decomposition. A characteristic amplitude ripple based on the period of the beamlet decomposition remains in the field. Due to the soft edges of the Gaussian beams, they cannot completely reconstruct the field of a sharp aperture edge. Using a larger number of smaller beamlets decreases the beamlet distribution period and increases the slope of the Gaussian beams, allowing for the mitigation of both of these effects (shown in Figure \ref  {fig:gbd_essentials}d).}{8}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Upon decomposing the initial wavefront into a sufficient set of Gaussian beams, we can use their analytical linear propagation laws\cite  {Siegman_1986} (described in Section \ref  {sec:methods} of this manuscript) to compute the coherent field at any arbitrary plane in the optical system.}{8}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{stellar}{8}}
-\@writefile{loc}{\ChangesListline {added}{Added}{but may not be for next-generation observatories whose large apertures may necessitate relatively fast telescope optics}{8}}
-\citation{Harvey15,Worku:18}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Gaussian Beamlet Decomposition}{7}{subsection.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Illustration of the operating principle of GBD in one dimension. The aperture function for traditional imaging systems is shown in (a) as a top-hat function. The decomposition of this function into a discrete set of Gaussian beams is shown in (b), which shows nine evenly-spaced Gaussian profiles before their coherent summation, which is shown in (c). The coherent sum (black) of these nine beamlets shows that the beamlets are incapable of perfectly reconstructing the original aperture function (dashed red), specifically the sharp edge and uniform amplitude. More beamlets are needed for a more accurate reconstruction, which is shown in (d) for 199 beamlets. The amplitude ripple has virtually vanished, and the field near the aperture edges is almost entirely recovered.}}{7}{figure.2}\protected@file@percent }
+\newlabel{fig:gbd_essentials}{{2}{7}{Illustration of the operating principle of GBD in one dimension. The aperture function for traditional imaging systems is shown in (a) as a top-hat function. The decomposition of this function into a discrete set of Gaussian beams is shown in (b), which shows nine evenly-spaced Gaussian profiles before their coherent summation, which is shown in (c). The coherent sum (black) of these nine beamlets shows that the beamlets are incapable of perfectly reconstructing the original aperture function (dashed red), specifically the sharp edge and uniform amplitude. More beamlets are needed for a more accurate reconstruction, which is shown in (d) for 199 beamlets. The amplitude ripple has virtually vanished, and the field near the aperture edges is almost entirely recovered}{figure.2}{}}
 \citation{Harvey15}
 \citation{arnaud_representation_1985,Greynolds86}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{Observatories are designed and modeled in ray trace software (e.g. CODE V, Zemax OpticStudio) to accurately model the wavefront in the exit pupil. Upon finalizing the design, the complex-valued exit pupil is decomposed into a functional representation (e.g. a set of polynomial coefficients, such as the Zernikes\cite  {krist_numerical_2015}) and sent to an open-source Fourier-based physical optics propagator (e.g. POPPY, PROPER, HCIPy) to generate the complex field at the image plane. The flux field is taken by a model of the detector (e.g. EMCCD Detect, Pyxel\cite  {Pyxel}) to create a simulated raw science image that can be post-processed (e.g. PyKLIP\cite  {pyklip}, NMF imaging\cite  {nmfimaging}).}{9}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{aims to}{9}}
-\@writefile{loc}{\ChangesListline {added}{Added}{s}{9}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{observatory}{9}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{coherent}{9}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{a generally astigmatic}{9}}
-\@writefile{loc}{\ChangesListline {added}{Added}{s}{9}}
-\@writefile{loc}{\ChangesListline {added}{Added}{instead of the entire observatory}{9}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{This locality}{9}}
-\@writefile{loc}{\ChangesListline {added}{Added}{simulation of the}{9}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{.}{9}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{where $h_{1,2}$ are the coordinates of the parabasal rays on the plane transverse to propagation with an origin defined by the central ray and $\theta _{1,2}$ are the angles between the parabasal rays and the central ray.}{9}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{translating}{9}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{to a physical optics propagator}{9}}
 \citation{worku_vectorial_2017,Worku:18,Worku19}
 \citation{Collins:70}
 \citation{Worku19}
 \citation{Worku:20}
 \citation{Greynolds14}
 \citation{modeling_coherence_fred}
-\@writefile{loc}{\ChangesListline {added}{Added}{Another GBD approach, }{10}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{Gaussian}{10}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Our goal is to publicize the transfer matrix method by developing an algorithm for its implementation, and then use it to characterize GBD's suitability for high-contrast imaging simulation. Our work can then be used as a platform with which to study the suitability of Worku and Gross' modified GBD by future investigators.}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Hybrid Propagation Physics}{11}{subsection.1.3}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{Structure in the field where the initial decomposition occurs (typically, the entrance pupil) can be well-represented by Gaussian beams as long as the structure of interest is larger than the beamlets used in decomposition. Diffraction from structure in interemediate planes (between the pupil and focal planes) is challenging to represent if the beamlets diverge considerably. However, secondary beamlets can be traced from these intermediate structures to aid in the accuracy of the simulation\cite  {Greynolds14}. At the focal plane of a diffraction-limited system, the rays are highly concentrated while the diffracted field spreads out considerably (e.g. the Airy disk). Because of GBD's reliance on ray tracing, it cannot represent diffraction from structure in the focal plane well without re-decomposing the field \cite  {modeling_coherence_fred}.}{11}}
-\@writefile{loc}{\ChangesListline {added}{Added}{the case of}{11}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{consequently}{11}}
-\@writefile{loc}{\ChangesListline {added}{Added}{(shown in Figure \ref  {fig:hybridpropdiagram})}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Hybrid Propagation Physics}{9}{subsection.1.3}\protected@file@percent }
 \citation{Ashcraft2020}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Diagram demonstrating the hybrid propagation physics model. The observatory optics are best described by a ray-based propagation model, so GBD is used to compute the field at the image plane before the coronagraph focal plane mask (FPM). The field array is then passed to a paraxial diffraction model which propagates it past the FPM and through the remainder of the coronagraph. This propagation scheme permits the user to model the influence of the observatory optics non-paraxially, without losing accuracy after propagating past the focal plane mask.}}{12}{figure.3}\protected@file@percent }
-\newlabel{fig:hybridpropdiagram}{{3}{12}{Diagram demonstrating the hybrid propagation physics model. The observatory optics are best described by a ray-based propagation model, so GBD is used to compute the field at the image plane before the coronagraph focal plane mask (FPM). The field array is then passed to a paraxial diffraction model which propagates it past the FPM and through the remainder of the coronagraph. This propagation scheme permits the user to model the influence of the observatory optics non-paraxially, without losing accuracy after propagating past the focal plane mask}{figure.3}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{model}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Diagram demonstrating the hybrid propagation physics model. The observatory optics are best described by a ray-based propagation model, so GBD is used to compute the field at the image plane before the coronagraph focal plane mask (FPM). The field array is then passed to a paraxial diffraction model which propagates it past the FPM and through the remainder of the coronagraph. This propagation scheme permits the user to model the influence of the observatory optics non-paraxially, without losing accuracy after propagating past the focal plane mask.}}{11}{figure.3}\protected@file@percent }
+\newlabel{fig:hybridpropdiagram}{{3}{11}{Diagram demonstrating the hybrid propagation physics model. The observatory optics are best described by a ray-based propagation model, so GBD is used to compute the field at the image plane before the coronagraph focal plane mask (FPM). The field array is then passed to a paraxial diffraction model which propagates it past the FPM and through the remainder of the coronagraph. This propagation scheme permits the user to model the influence of the observatory optics non-paraxially, without losing accuracy after propagating past the focal plane mask}{figure.3}{}}
 \citation{Ashcraft_poke_2022}
 \citation{anche_inprep}
 \citation{msgpack}
 \citation{rayoptics}
 \citation{rayoptics}
-\@writefile{loc}{\ChangesListline {added}{Added}{Our GBD module was built in the Poke\cite  {Ashcraft_poke_2022} Python package currently available on Github. Poke was originally developed to be a polarization ray tracing module to study the influence of polarization aberrations on astronomical coronagraphs\cite  {anche_inprep}, but we expanded it to include GBD. Poke operates by using ray tracer API's to trace a raybundle through every surface in the optical system. The relevant ray data is stored in a Rayfront Python object and can be loaded into a Python environment and interacted with independent of the raytracer that generated the data. The Rayfronts can also be compiled into binary file types using the msgpack\cite  {msgpack} package and distributed to any interested investigator, effectively open-sourcing the physical optics calculations done on ray data.}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \added {Illustration of Poke's use as an interface to open-source ray-based physical optics. Poke only requires an interface between a ray tracing engine (orange, left) to generate and save a Rayfront object, which includes all ray data necessary for the GBD calculation. Currently, Poke supports sequential systems in CODE V and Zemax, but we are working on adding support for open-source packages that have ray tracers, like ray-optics\cite  {rayoptics}. The GBD field that Poke computes can then be sent to any open-source diffraction modeling package (yellow, right) to complete the hybrid propagation model.}}}{13}{figure.4}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of Poke's use as an interface to open-source ray-based physical optics. Poke only requires an interface between a ray tracing engine (orange, left) to generate and save a Rayfront object, which includes all ray data necessary for the GBD calculation. Currently, Poke supports sequential systems in CODE V and Zemax, but we are working on adding support for open-source packages that have ray tracers, like ray-optics\cite  {rayoptics}. The GBD field that Poke computes can then be sent to any open-source diffraction modeling package (yellow, right) to complete the hybrid propagation model.}{13}}
-\newlabel{fig:poke_modeling}{{4}{13}{\added {Illustration of Poke's use as an interface to open-source ray-based physical optics. Poke only requires an interface between a ray tracing engine (orange, left) to generate and save a Rayfront object, which includes all ray data necessary for the GBD calculation. Currently, Poke supports sequential systems in CODE V and Zemax, but we are working on adding support for open-source packages that have ray tracers, like ray-optics\cite {rayoptics}. The GBD field that Poke computes can then be sent to any open-source diffraction modeling package (yellow, right) to complete the hybrid propagation model.}}{figure.4}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{In this study we conduct ray traces in Zemax, which are then saved as a Poke Rayfront object. Poke performs the GBD simulations using the saved ray data to generate the field at the focal plane of the telescope. This data is exported to a coronagraph model built using HCIPy.}{13}}
-\citation{Harvey15}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of Poke's use as an interface to open-source ray-based physical optics. Poke only requires an interface between a ray tracing engine (orange, left) to generate and save a Rayfront object, which includes all ray data necessary for the GBD calculation. Currently, Poke supports sequential systems in CODE V and Zemax, but we are working on adding support for open-source packages that have ray tracers, like ray-optics\cite  {rayoptics}. The GBD field that Poke computes can then be sent to any open-source diffraction modeling package (yellow, right) to complete the hybrid propagation model.}}{12}{figure.4}\protected@file@percent }
+\newlabel{fig:poke_modeling}{{4}{12}{Illustration of Poke's use as an interface to open-source ray-based physical optics. Poke only requires an interface between a ray tracing engine (orange, left) to generate and save a Rayfront object, which includes all ray data necessary for the GBD calculation. Currently, Poke supports sequential systems in CODE V and Zemax, but we are working on adding support for open-source packages that have ray tracers, like ray-optics\cite {rayoptics}. The GBD field that Poke computes can then be sent to any open-source diffraction modeling package (yellow, right) to complete the hybrid propagation model}{figure.4}{}}
 \citation{goodman17}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{Preliminary Mathematical Methods}{14}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}\replaced {Preliminary Mathematical Methods}{Methods}}{14}{section.2}\protected@file@percent }
-\newlabel{sec:methods}{{2}{14}{\replaced {Preliminary Mathematical Methods}{Methods}}{section.2}{}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{To assess the viability of GBD for high-contrast imaging simulation we compare the PSF produced by GBD to other diffraction methods that represent the state of the art. Traditional GBD is known to not reconstruct high spatial frequency information because of its inability to recreate sharp edges exactly and residual ripple that is left from the beamlet distribution\cite  {Harvey15}, but this has not been quantitatively studied in the literature.}{14}}
-\@writefile{loc}{\ChangesListline {added}{Added}{necessary mathematical tools that we need to formulate our GBD algorithm. This includes the}{14}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{how to use}{14}}
-\@writefile{loc}{\ChangesListline {added}{Added}{to arbitrarily compute the parameters necessary}{14}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{Propagation of a single Gaussian beam}{14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}\replaced {Propagation of a single Gaussian beam}{Gaussian Beam Parameters}}{14}{subsection.2.1}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{To propagate an arbitrary optical beam the field must be decomposed into a finite sum of Gaussian beamlets which are then independently propagated.}{14}}
-\@writefile{loc}{\ChangesListline {added}{Added}{The equation for }{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Preliminary Mathematical Methods}{13}{section.2}\protected@file@percent }
+\newlabel{sec:methods}{{2}{13}{Preliminary Mathematical Methods}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Propagation of a single Gaussian beam}{13}{subsection.2.1}\protected@file@percent }
 \citation{Siegman_1986}
 \citation{Ashcraft2020,cai_decentered_nodate}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{parameterized}{15}}
-\@writefile{loc}{\ChangesListline {added}{Added}{\cite  {Siegman_1986}}{15}}
-\newlabel{eq:propq}{{5}{15}{\replaced {Propagation of a single Gaussian beam}{Gaussian Beam Parameters}}{equation.2.5}{}}
+\newlabel{eq:complex_curvature}{{3}{14}{Propagation of a single Gaussian beam}{equation.2.3}{}}
+\newlabel{eq:propq}{{5}{14}{Propagation of a single Gaussian beam}{equation.2.5}{}}
+\citation{Collins:70}
 \citation{Brouwer64}
-\newlabel{eq:prop_complex}{{7}{16}{\replaced {Propagation of a single Gaussian beam}{Gaussian Beam Parameters}}{equation.2.7}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{We can then express the propagated Gaussian beam with equation \ref  {eq:gaussian_prop}}{16}}
-\newlabel{eq:gaussian_prop}{{8}{16}{\replaced {Propagation of a single Gaussian beam}{Gaussian Beam Parameters}}{equation.2.8}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Where $\mathbf  {r}$ is the radial coordinate in the plane transverse to propagation.}{16}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Computing the Differential Ray Transfer Matrix}{16}{subsection.2.2}\protected@file@percent }
-\newlabel{eq:totalabcdmatrix}{{10}{17}{Computing the Differential Ray Transfer Matrix}{equation.2.10}{}}
+\newlabel{eq:prop_complex}{{7}{15}{Propagation of a single Gaussian beam}{equation.2.7}{}}
+\newlabel{eq:gaussian_prop}{{8}{15}{Propagation of a single Gaussian beam}{equation.2.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Computing the Differential Ray Transfer Matrix}{15}{subsection.2.2}\protected@file@percent }
 \citation{Brouwer64}
 \citation{Ashcraft2020}
+\newlabel{eq:totalabcdmatrix}{{10}{16}{Computing the Differential Ray Transfer Matrix}{equation.2.10}{}}
+\newlabel{eq:matrixabcd}{{11}{16}{Computing the Differential Ray Transfer Matrix}{equation.2.11}{}}
 \citation{Stone:97}
-\newlabel{eq:matrixabcd}{{11}{18}{Computing the Differential Ray Transfer Matrix}{equation.2.11}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{an arbitrary }{18}}
-\@writefile{loc}{\ChangesListline {added}{Added}{of the differential ray tracing technique in poke}{19}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{a user-specified ray tracer (e.g. Zemax OpticStudio)}{19}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{The ray coordinates of interest are on the source plane (where the field decomposition is done, e.g. the entrance pupil) and the detector plane (where the propagated field is evaluated, eg. the location of a camera sensor). A local coordinate system is configured on both planes, and the ray positions and directions are computed on these planes}{19}}
-\@writefile{loc}{\ChangesListline {added}{Added}{An element of the ray transfer matrix can be computed by determining the ratio of the differential parameters from the data on the detector plane to the source plane.}{19}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{$A_{y,y}$}{19}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{$y$}{19}}
-\@writefile{loc}{\ChangesListline {added}{Added}{difference in}{19}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{$y$}{19}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{central and differential rays determine the derivative}{19}}
-\newlabel{eq:Ayy}{{12}{19}{Computing the Differential Ray Transfer Matrix}{equation.2.12}{}}
+\newlabel{eq:Ayy}{{12}{18}{Computing the Differential Ray Transfer Matrix}{equation.2.12}{}}
 \citation{Greynolds86}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Diagram illustrating differential ray tracing in the 2D case for a simple lens system. The central ray (black) is propagated along with two parabasal rays with a differential addition in the $y$ direction (red) and another with a differential addition in the $l$ direction (blue). To determine the ABCD matrix the ray data is computed on the transversal plane, which is normal to the central ray.}}{20}{figure.5}\protected@file@percent }
-\newlabel{fig:diffdiagram}{{5}{20}{Diagram illustrating differential ray tracing in the 2D case for a simple lens system. The central ray (black) is propagated along with two parabasal rays with a differential addition in the $y$ direction (red) and another with a differential addition in the $l$ direction (blue). To determine the ABCD matrix the ray data is computed on the transversal plane, which is normal to the central ray}{figure.5}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{(see ABCD matrix in equation \ref  {eq:totalabcdmatrix})}{20}}
-\@writefile{loc}{\ChangesListline {added}{Added}{two in position ($\delta x$,$\delta y$) and two in slope ($\delta l$, $\delta m$)}{20}}
-\citation{Harvey15}
-\citation{Worku19,Collins:70}
-\newlabel{eq:diffrays}{{13}{21}{Computing the Differential Ray Transfer Matrix}{equation.2.13}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{which are traced in addition to}{21}}
-\@writefile{loc}{\ChangesListline {added}{Added}{central}{21}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{.}{21}}
-\@writefile{loc}{\ChangesListline {added}{Added}{An example of propagating a ray from the source plane to the detector plane is shown in equation \ref  {eq:diffmat}. Here the subscript $S$ refers to the coordinate on the source plane, and the subscript $D$ refers to the coordinate on the detector plane.}{21}}
-\newlabel{eq:diffmat}{{14}{21}{Computing the Differential Ray Transfer Matrix}{equation.2.14}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{using positive-valued differentials}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Diagram illustrating differential ray tracing in the 2D case for a simple lens system. The central ray (black) is propagated along with two parabasal rays with a differential addition in the $y$ direction (red) and another with a differential addition in the $l$ direction (blue). To determine the ABCD matrix the ray data is computed on the transversal plane, which is normal to the central ray and intersects the point at which we wish to evaluate the field.}}{19}{figure.5}\protected@file@percent }
+\newlabel{fig:diffdiagram}{{5}{19}{Diagram illustrating differential ray tracing in the 2D case for a simple lens system. The central ray (black) is propagated along with two parabasal rays with a differential addition in the $y$ direction (red) and another with a differential addition in the $l$ direction (blue). To determine the ABCD matrix the ray data is computed on the transversal plane, which is normal to the central ray and intersects the point at which we wish to evaluate the field}{figure.5}{}}
+\newlabel{eq:diffrays}{{13}{19}{Computing the Differential Ray Transfer Matrix}{equation.2.13}{}}
 \citation{koshel_novel_2001}
 \citation{Harvey15}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{to propagate}{22}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{The same rays can be traced, but by virtue of a different implementation, we have more possibilities for development through the general Collins' integral\cite  {Worku19,Collins:70}.}{22}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{Using this matrix, any open-source diffraction model can be linked to a ray trace model of an observatory.}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Entrance Pupil Spatial Decomposition}{22}{subsection.2.3}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{The final variable to constrain in GBD is how to appropriately decompose the field in the entrance pupil into a finite set of Gaussian beams. This problem is illustrated in 1D earlier in figure \ref  {fig:gbd_essentials}, but the actual decomposition is a 2D problem.}{22}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{Gaussian mode}{22}}
+\newlabel{eq:diffmat_rays}{{14}{20}{Computing the Differential Ray Transfer Matrix}{equation.2.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Entrance Pupil Spatial Decomposition}{20}{subsection.2.3}\protected@file@percent }
 \citation{Worku:18}
 \citation{Worku:18}
-\@writefile{loc}{\ChangesListline {added}{Added}{'}{23}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{e}{23}}
 \citation{Worku19}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Illustration of the Even (left), Fibonacci (middle), and Polar (right) sample schemes for decomposing the field at the entrance pupil of the optical system with approximately the same number of beamlets in each figure. Quantifying the ramifications of these sample schemes is of paramount importance to accurate diffraction simulation.}}{24}{figure.6}\protected@file@percent }
-\newlabel{fig:sampleschemes}{{6}{24}{Illustration of the Even (left), Fibonacci (middle), and Polar (right) sample schemes for decomposing the field at the entrance pupil of the optical system with approximately the same number of beamlets in each figure. Quantifying the ramifications of these sample schemes is of paramount importance to accurate diffraction simulation}{figure.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}The Proposed Beamlet Propagation algorithm}{24}{section.3}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{However, because the implementation is not public we must derive the full algorithm using the concepts described in section \ref  {sec:methods}. The basic concept of propagating a single beamlet through an arbitrary optical system is illustrated in figure \ref  {fig:gaussian_prop_diagram}. A Gaussian beam is placed at some position $r_{S}$ in the source plane where the initial decomposition occurs. The central ray (shown in black on figure \ref  {fig:gaussian_prop_diagram}) that emanates from the peak of this Gaussian beam is traced to the detector plane using a ray tracing engine. The data of the central ray at the source plane $(\mathbf  {r}_{ray,S}$,$\mathbf  {k}_{ray,S})$ and detector plane $(\mathbf  {r}_{ray,D}$,$\mathbf  {k}_{ray,D})$ (shown in figure \ref  {fig:algo1}) are used to propagate the ray to the "transversal plane", which is normal to the central ray and intersects the detector pixel where we are evaluating the field (shown in yellow on figure \ref  {fig:gaussian_prop_diagram}). The differential rays are also traced to the transversal plane in order to compute the ABCD matrices that describe the transformation of the Gaussian beam through an arbitrary ray path, and compute the final field incident on the detector pixel.}{24}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Illustration of the concept for transfer-matrix Gaussian beamlet decomposition. The principle is to propagate the central ray that emanates normal to the peak of the Gaussian beam (red) in the entrance pupil to the transversal plane that intersects a given point on a detector (yellow pixel). The Gaussian field is evaluated at this intersection, and the process is repeated for each pixel and each ray. The coherent superposition of the Gaussian beams yields the field observed on the detector.}}{25}{figure.7}\protected@file@percent }
-\newlabel{fig:gaussian_prop_diagram}{{7}{25}{Illustration of the concept for transfer-matrix Gaussian beamlet decomposition. The principle is to propagate the central ray that emanates normal to the peak of the Gaussian beam (red) in the entrance pupil to the transversal plane that intersects a given point on a detector (yellow pixel). The Gaussian field is evaluated at this intersection, and the process is repeated for each pixel and each ray. The coherent superposition of the Gaussian beams yields the field observed on the detector}{figure.7}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{mathematical algorithm}{25}}
-\@writefile{loc}{\ChangesListline {added}{Added}{We refer to several vectors in the algorithm below that are referred to using the convention $\mathbf  {x}_{y,Z}$. $\mathbf  {x}$ is data type of the vector, typically $\mathbf  {r}$ if a position or $\mathbf  {k}$ if a direction. $y$ is what item the vector belongs to, "cen" means it belongs to the central ray, "+x" means it belongs to the +x differential ray, "pix" means a pixel on the detector plane. $Z$ refers to the coordinate system of the vector, $D$ for "detector", or $T$ for "transversal". The relevant parameters used in the propagation algorithm are shown in figure \ref  {fig:algo1}, and are referenced throughout the procedure below.}{25}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Propagating rays to the transversal plane}{25}{subsection.3.1}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{A GBD simulation begins by running a ray trace though an optical system in the user's preferred design code. GBD needs only compute the ray data at the plane where the decomposition occurred (the source plane) and the plane where we choose to observe the field (the detector plane). This is shown for the simple case of a lens with the detector positioned far from focus on figure \ref  {fig:algo1}. The source plane (leftmost dashed line) is where the rays used for GBD are started. The detector plane (rightmost dashed line) intersects the ray defined by $\mathbf  {k}_{ray,D}$ and includes the pixel that we are evaluating the field at, positioned at coordinate $\mathbf  {r}_{pixel,D}$}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \added {Illustration of relevant ray parameters necessary to propagate the ray data to the transversal plane, where we evaluate the Gaussian field that intersects with a detector pixel. A ray that defines a Gaussian beam is placed on the source plane (leftmost vertical dashed line) with some direction ($\mathbf  {k}_{ray,S}$) and position ($\mathbf  {r}_{ray,S}$) and propagated though the system. At the detector plane (rightmost vertical dashed line), the ray's direction and positions ($\mathbf  {k}_{ray,D}$ and $\mathbf  {r}_{ray,D}$ respectively) have been transformed by the optical system. To propagate the rays to the transversal plane (tilted dashed line) that intersects the pixel at $\mathbf  {r}_{pixel,D}$ where the field evaluation occurs, it must be moved a distance $\Delta _{ray}$ along the ray path in detector space.}}}{26}{figure.8}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of relevant ray parameters necessary to propagate the ray data to the transversal plane, where we evaluate the Gaussian field that intersects with a detector pixel. A ray that defines a Gaussian beam is placed on the source plane (leftmost vertical dashed line) with some direction ($\mathbf  {k}_{ray,S}$) and position ($\mathbf  {r}_{ray,S}$) and propagated though the system. At the detector plane (rightmost vertical dashed line), the ray's direction and positions ($\mathbf  {k}_{ray,D}$ and $\mathbf  {r}_{ray,D}$ respectively) have been transformed by the optical system. To propagate the rays to the transversal plane (tilted dashed line) that intersects the pixel at $\mathbf  {r}_{pixel,D}$ where the field evaluation occurs, it must be moved a distance $\Delta _{ray}$ along the ray path in detector space.}{26}}
-\newlabel{fig:algo1}{{8}{26}{\added {Illustration of relevant ray parameters necessary to propagate the ray data to the transversal plane, where we evaluate the Gaussian field that intersects with a detector pixel. A ray that defines a Gaussian beam is placed on the source plane (leftmost vertical dashed line) with some direction ($\mathbf {k}_{ray,S}$) and position ($\mathbf {r}_{ray,S}$) and propagated though the system. At the detector plane (rightmost vertical dashed line), the ray's direction and positions ($\mathbf {k}_{ray,D}$ and $\mathbf {r}_{ray,D}$ respectively) have been transformed by the optical system. To propagate the rays to the transversal plane (tilted dashed line) that intersects the pixel at $\mathbf {r}_{pixel,D}$ where the field evaluation occurs, it must be moved a distance $\Delta _{ray}$ along the ray path in detector space.}}{figure.8}{}}
-\newlabel{eq:plane}{{18}{27}{Propagating rays to the transversal plane}{equation.3.18}{}}
-\newlabel{eq:line}{{19}{27}{Propagating rays to the transversal plane}{equation.3.19}{}}
-\newlabel{eq:intersection}{{20}{27}{Propagating rays to the transversal plane}{equation.3.20}{}}
-\newlabel{eq:delta}{{21}{27}{Propagating rays to the transversal plane}{equation.3.21}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Table of subscripts describing the five rays that define the propagation of a generally astigmatic Gaussian beam. The central ray emanates from the peak of the beamlet and propagates through the optical system along with the closely spaced differential rays.}}{28}{table.1}\protected@file@percent }
-\newlabel{tab:rayindices}{{1}{28}{Table of subscripts describing the five rays that define the propagation of a generally astigmatic Gaussian beam. The central ray emanates from the peak of the beamlet and propagates through the optical system along with the closely spaced differential rays}{table.1}{}}
-\newlabel{eq:prop_ray}{{22}{28}{Propagating rays to the transversal plane}{equation.3.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Transformation to the transversal plane}{28}{subsection.3.2}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{in the coordinates of the detector plane}{28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Caption}}{29}{figure.9}\protected@file@percent }
-\newlabel{fig:algo2}{{9}{29}{Caption}{figure.9}{}}
-\newlabel{eq:compute_lbasis}{{23}{29}{Transformation to the transversal plane}{equation.3.23}{}}
-\newlabel{eq:compute_mbasis}{{24}{29}{Transformation to the transversal plane}{equation.3.24}{}}
-\newlabel{eq:orthomatrix}{{25}{30}{Transformation to the transversal plane}{equation.3.25}{}}
-\newlabel{eq:posbasis}{{26}{30}{Transformation to the transversal plane}{equation.3.26}{}}
-\newlabel{eq:dirbasis}{{27}{30}{Transformation to the transversal plane}{equation.3.27}{}}
-\newlabel{eq:pixbasis}{{28}{30}{Transformation to the transversal plane}{equation.3.28}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Computing the differential ray transfer matrix}{31}{subsection.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Example of the five rays position coordinates on the transversal plane after propagating through a rotationally symmetric optical system. The rotational symmetry means the rays stay in their plane of incidence, in this case, the +m and +y rays stay in the $y-z$ plane, and the +l and +x rays stay in the $x-z$ plane. Along the vertical $y_{T}$ axis, the $+m$ and $+y$ ray positions are shown in red and purple, respectively. Along the horizontal $x_{T}$ axis, the $+l$ and $+x$ rays are shown in blue and green, respectively. The central ray coordinate acts as the coordinate origin of the transversal plane, given by $\mathbf  {r}_{cen,T}$. The light blue region that inscribes the position vectors is the area that is represented by the differential ray trace, and is effectively what we enforce the paraxial approximation over.}}{32}{figure.10}\protected@file@percent }
-\newlabel{fig:transversal_profile}{{10}{32}{Example of the five rays position coordinates on the transversal plane after propagating through a rotationally symmetric optical system. The rotational symmetry means the rays stay in their plane of incidence, in this case, the +m and +y rays stay in the $y-z$ plane, and the +l and +x rays stay in the $x-z$ plane. Along the vertical $y_{T}$ axis, the $+m$ and $+y$ ray positions are shown in red and purple, respectively. Along the horizontal $x_{T}$ axis, the $+l$ and $+x$ rays are shown in blue and green, respectively. The central ray coordinate acts as the coordinate origin of the transversal plane, given by $\mathbf {r}_{cen,T}$. The light blue region that inscribes the position vectors is the area that is represented by the differential ray trace, and is effectively what we enforce the paraxial approximation over}{figure.10}{}}
-\newlabel{eq:total_abcd_matrix}{{29}{32}{Computing the differential ray transfer matrix}{equation.3.29}{}}
-\citation{Worku19}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Computing the Gaussian field}{33}{subsection.3.4}\protected@file@percent }
-\newlabel{eq:radial_cord}{{30}{33}{Computing the Gaussian field}{equation.3.30}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{(equation \ref  {eq:gaussian_prop})}{33}}
-\newlabel{eq:final_gauss}{{31}{33}{Computing the Gaussian field}{equation.3.31}{}}
-\citation{cai_decentered_nodate,Ashcraft2020}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Illustration of the Even (left), Fibonacci (middle), and Polar (right) sample schemes for decomposing the field at the entrance pupil of the optical system with approximately the same number of beamlets in each Figure. Quantifying the ramifications of these sampling schemes is of paramount importance to accurate diffraction simulation.}}{22}{figure.6}\protected@file@percent }
+\newlabel{fig:sampleschemes}{{6}{22}{Illustration of the Even (left), Fibonacci (middle), and Polar (right) sample schemes for decomposing the field at the entrance pupil of the optical system with approximately the same number of beamlets in each Figure. Quantifying the ramifications of these sampling schemes is of paramount importance to accurate diffraction simulation}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}The Proposed Beamlet Propagation algorithm}{22}{section.3}\protected@file@percent }
+\newlabel{sec:algorithm}{{3}{22}{The Proposed Beamlet Propagation algorithm}{section.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Diagram illustrating the geometry of GBD and the relevant data used in the propagation calculation for a single beamlet (shown in red). GBD begins by tracing the central ray (black) and differential rays (light red and blue) from the source plane (left) to the evaluation plane (right). The rays must be propagated from the evaluation plane to the transversal plane, which is normal to the central ray and intersects a point at which the field is evaluated (yellow box). The difference of the differential ray data with the central ray data on the transversal plane gives us the ABCD matrix used to propagate a Gaussian beamlet. We evaluate the Gaussian beamlet at the intersection of the transversal plane with the evaluation plane to get the beamlet's contribution to the total field at that point. This process is repeated for each point and each beamlet. The coherent superposition of the beamlets at the field evaluation points yields the final propagated field.}}{23}{figure.7}\protected@file@percent }
+\newlabel{fig:gaussian_prop_diagram}{{7}{23}{Diagram illustrating the geometry of GBD and the relevant data used in the propagation calculation for a single beamlet (shown in red). GBD begins by tracing the central ray (black) and differential rays (light red and blue) from the source plane (left) to the evaluation plane (right). The rays must be propagated from the evaluation plane to the transversal plane, which is normal to the central ray and intersects a point at which the field is evaluated (yellow box). The difference of the differential ray data with the central ray data on the transversal plane gives us the ABCD matrix used to propagate a Gaussian beamlet. We evaluate the Gaussian beamlet at the intersection of the transversal plane with the evaluation plane to get the beamlet's contribution to the total field at that point. This process is repeated for each point and each beamlet. The coherent superposition of the beamlets at the field evaluation points yields the final propagated field}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Propagating rays to the transversal plane}{24}{subsection.3.1}\protected@file@percent }
+\newlabel{eq:plane}{{18}{24}{Propagating rays to the transversal plane}{equation.3.18}{}}
+\newlabel{eq:line}{{19}{24}{Propagating rays to the transversal plane}{equation.3.19}{}}
+\newlabel{eq:delta}{{20}{25}{Propagating rays to the transversal plane}{equation.3.20}{}}
+\newlabel{eq:prop_ray}{{21}{25}{Propagating rays to the transversal plane}{equation.3.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Transformation to the transversal plane}{25}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:compute_lbasis}{{22}{26}{Transformation to the transversal plane}{equation.3.22}{}}
+\newlabel{eq:compute_mbasis}{{23}{26}{Transformation to the transversal plane}{equation.3.23}{}}
+\newlabel{eq:orthomatrix}{{24}{26}{Transformation to the transversal plane}{equation.3.24}{}}
+\newlabel{eq:posbasis}{{25}{26}{Transformation to the transversal plane}{equation.3.25}{}}
+\newlabel{eq:dirbasis}{{26}{27}{Transformation to the transversal plane}{equation.3.26}{}}
+\newlabel{eq:pixbasis}{{27}{27}{Transformation to the transversal plane}{equation.3.27}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Computing the differential ray transfer matrix}{27}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:diffmat}{{28}{28}{Computing the differential ray transfer matrix}{equation.3.28}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Computing the Gaussian field}{28}{subsection.3.4}\protected@file@percent }
+\newlabel{eq:radial_cord}{{29}{28}{Computing the Gaussian field}{equation.3.29}{}}
+\newlabel{eq:final_gauss}{{30}{28}{Computing the Gaussian field}{equation.3.30}{}}
 \citation{Mei_2005}
 \citation{CAI2002139}
 \citation{CAI2002139}
 \citation{greynolds_ten_2020}
 \citation{Worku19}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{34}{section.4}\protected@file@percent }
-\newlabel{sec:results}{{4}{34}{Results}{section.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{30}{section.4}\protected@file@percent }
+\newlabel{sec:results}{{4}{30}{Results}{section.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Optical system prescription for the RC telescope based on the HST used in this investigation. All distances are given in meters. RoC stands for Radius of Curvature, and the sign convention is chosen such that negative values are concave, and positive values are convex.}}{30}{table.1}\protected@file@percent }
+\newlabel{tab:fiducial_observatory_specs}{{1}{30}{Optical system prescription for the RC telescope based on the HST used in this investigation. All distances are given in meters. RoC stands for Radius of Curvature, and the sign convention is chosen such that negative values are concave, and positive values are convex}{table.1}{}}
 \citation{mawet_annular_2005,lee_experimental_2006}
 \citation{mawet_vector_2010}
 \citation{serabyn_vector_2019-1}
-\@writefile{loc}{\ChangesListline {added}{Added}{coupled to a vortex coronagraph}{35}}
-\@writefile{loc}{\ChangesListline {added}{Added}{and is illustrated in figure \ref  {fig:telescope_model}}{35}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{-}{35}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Optical system prescription for the RC telescope based on the HST used in this investigation. All distances are given in meters, and the semi-aperture is equivalent to half of the diameter. }}{35}{table.2}\protected@file@percent }
-\newlabel{tab:fiducial_observatory_specs}{{2}{35}{Optical system prescription for the RC telescope based on the HST used in this investigation. All distances are given in meters, and the semi-aperture is equivalent to half of the diameter}{table.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \added {Illustration of the hybrid propagation physics model used to produce the results in this section. The system perscription in table \ref  {tab:fiducial_observatory_specs} is loaded into Zemax OpticStudio and shown on the left (labeled HST). The phase of the vector vortex coronagraph (VVC) is shown in the middle. The GBD PSF is computed at this plane and propagated through the coronagraph using HCIPy to arrive at the final image at the detector plane.}}}{35}{figure.11}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of the hybrid propagation physics model used to produce the results in this section. The system perscription in table \ref  {tab:fiducial_observatory_specs} is loaded into Zemax OpticStudio and shown on the left (labeled HST). The phase of the vector vortex coronagraph (VVC) is shown in the middle. The GBD PSF is computed at this plane and propagated through the coronagraph using HCIPy to arrive at the final image at the detector plane.}{35}}
-\newlabel{fig:telescope_model}{{11}{35}{\added {Illustration of the hybrid propagation physics model used to produce the results in this section. The system perscription in table \ref {tab:fiducial_observatory_specs} is loaded into Zemax OpticStudio and shown on the left (labeled HST). The phase of the vector vortex coronagraph (VVC) is shown in the middle. The GBD PSF is computed at this plane and propagated through the coronagraph using HCIPy to arrive at the final image at the detector plane.}}{figure.11}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{in section 4.2}{35}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{1 $\times $ 1 mm}{35}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{conducted in section 4.3 are}{35}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{1600 $\times $ 1600 pixels across 8 $\times $ 8 mm}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Illustration of the hybrid propagation physics model used to produce the results in this Section. The system prescription in Table \ref  {tab:fiducial_observatory_specs} is loaded into Zemax OpticStudio and shown on the left (labeled HST). The phase of a vortex coronagraph (VVC) is shown in the middle. The GBD PSF is computed at this plane and propagated through the coronagraph using HCIPy to arrive at the final image at the detector plane.}}{31}{figure.8}\protected@file@percent }
+\newlabel{fig:telescope_model}{{8}{31}{Illustration of the hybrid propagation physics model used to produce the results in this Section. The system prescription in Table \ref {tab:fiducial_observatory_specs} is loaded into Zemax OpticStudio and shown on the left (labeled HST). The phase of a vortex coronagraph (VVC) is shown in the middle. The GBD PSF is computed at this plane and propagated through the coronagraph using HCIPy to arrive at the final image at the detector plane}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The Fiducial Coronagraph}{31}{subsection.4.1}\protected@file@percent }
 \citation{por2018hcipy}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The Fiducial Coronagraph}{36}{subsection.4.1}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{2}{36}}
-\newlabel{eq:vortex}{{32}{36}{The Fiducial Coronagraph}{equation.4.32}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{which accepts a user-specified wavefront and then outputs the wavefront before the lyot stop. We can define our GBD PSF as an HCIPy wavefront and propagate it through the coronagraph to complete our hybrid propagation model and analyze the image plane residuals.}{37}}
-\newlabel{sect:results}{{4.1}{37}{The Fiducial Coronagraph}{equation.4.32}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}The Observatory PSF}{37}{subsection.4.2}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{in figures \ref  {fig:airy_even} and \ref  {fig:airy_fib}}{37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Comparisons of the PSF (top) and MTF (middle) for GBD with even sampling (left) and analytical Airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, and the azimuthally averaged radial profile is plotted on the bottom. The MTF is plotted out to the cutoff frequency of the HST of around 25 cy/mm. The radial oscillation in \added {the} fractional difference PSF is indicative of the artifacts introduced by GBD. In the MTF it is apparent that frequencies below 20 cy/mm are well-maintained, but the higher spatial frequencies increase in fractional difference. The effect on the PSF is revealed in the radial profile, where the PSF appears to spread out at larger angular separations. The RMS difference of the PSF data is 2.3e-6.}}{38}{figure.12}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{the}{38}}
-\newlabel{fig:airy_even}{{12}{38}{Comparisons of the PSF (top) and MTF (middle) for GBD with even sampling (left) and analytical Airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, and the azimuthally averaged radial profile is plotted on the bottom. The MTF is plotted out to the cutoff frequency of the HST of around 25 cy/mm. The radial oscillation in \added {the} fractional difference PSF is indicative of the artifacts introduced by GBD. In the MTF it is apparent that frequencies below 20 cy/mm are well-maintained, but the higher spatial frequencies increase in fractional difference. The effect on the PSF is revealed in the radial profile, where the PSF appears to spread out at larger angular separations. The RMS difference of the PSF data is 2.3e-6}{figure.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Comparisons of the PSF (top) and MTF (middle) for GBD with Fibonacci sampling for the same number of beamlets as figure \ref  {fig:airy_even} (left) and analytical airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, with the MTF plotted out to the cutoff frequency of the HST of around 25 cy/mm. The azimuthally averaged radial profile is plotted on the bottom. The fractional difference PSF is noticeably free of the ripples present in Figure \ref  {fig:airy_even}, and the fractional difference MTF shows that frequencies out to 23 cy/mm are well-maintained. The spreading present in Figure \ref  {fig:airy_even} is noticeably absent in the radial profile. The RMS difference of the PSF data is 1.6e-6, indicating that this distribution results in a more accurate simulation.}}{39}{figure.13}\protected@file@percent }
-\newlabel{fig:airy_fib}{{13}{39}{Comparisons of the PSF (top) and MTF (middle) for GBD with Fibonacci sampling for the same number of beamlets as figure \ref {fig:airy_even} (left) and analytical airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, with the MTF plotted out to the cutoff frequency of the HST of around 25 cy/mm. The azimuthally averaged radial profile is plotted on the bottom. The fractional difference PSF is noticeably free of the ripples present in Figure \ref {fig:airy_even}, and the fractional difference MTF shows that frequencies out to 23 cy/mm are well-maintained. The spreading present in Figure \ref {fig:airy_even} is noticeably absent in the radial profile. The RMS difference of the PSF data is 1.6e-6, indicating that this distribution results in a more accurate simulation}{figure.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces The RMS difference between the sum-normalized GBD PSF and analytical Airy function for the Fibonacci (blue circles) and Even (black squares) sample schemes. For the circular aperture it is clear that the Fibonacci sample scheme is more accurate for every case given a circular aperture. However, the returns are diminishing as the number of beamlets increases.}}{40}{figure.14}\protected@file@percent }
-\newlabel{fig:rms_vs_sample_airy}{{14}{40}{The RMS difference between the sum-normalized GBD PSF and analytical Airy function for the Fibonacci (blue circles) and Even (black squares) sample schemes. For the circular aperture it is clear that the Fibonacci sample scheme is more accurate for every case given a circular aperture. However, the returns are diminishing as the number of beamlets increases}{figure.14}{}}
+\newlabel{eq:vortex}{{31}{32}{The Fiducial Coronagraph}{equation.4.31}{}}
+\newlabel{sect:results}{{4.1}{33}{The Fiducial Coronagraph}{equation.4.31}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}The Observatory PSF}{33}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Comparisons of the PSF (top) and MTF (middle) for GBD with even sampling (left) and analytical Airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, and the azimuthally averaged radial profile is plotted on the bottom. The MTF is plotted out to the cutoff frequency of the HST of around 25 cy/mm. The radial oscillation in the fractional difference PSF is indicative of the artifacts introduced by GBD. In the MTF it is apparent that frequencies below 20 cy/mm are well-maintained, but the higher spatial frequencies increase in fractional difference. The effect on the PSF is revealed in the radial profile, where the PSF appears to spread out at larger angular separations. The RMS difference of the PSF data is 2.3e-6.}}{34}{figure.9}\protected@file@percent }
+\newlabel{fig:airy_even}{{9}{34}{Comparisons of the PSF (top) and MTF (middle) for GBD with even sampling (left) and analytical Airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, and the azimuthally averaged radial profile is plotted on the bottom. The MTF is plotted out to the cutoff frequency of the HST of around 25 cy/mm. The radial oscillation in the fractional difference PSF is indicative of the artifacts introduced by GBD. In the MTF it is apparent that frequencies below 20 cy/mm are well-maintained, but the higher spatial frequencies increase in fractional difference. The effect on the PSF is revealed in the radial profile, where the PSF appears to spread out at larger angular separations. The RMS difference of the PSF data is 2.3e-6}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Comparisons of the PSF (top) and MTF (middle) for GBD with Fibonacci sampling for the same number of beamlets as Figure \ref  {fig:airy_even} (left) and analytical airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, with the MTF plotted out to the cutoff frequency of the HST of around 25 cy/mm. The azimuthally averaged radial profile is plotted on the bottom. The presence of ripples in the fractional difference PSF is noticeably lower than Figure \ref  {fig:airy_even}, and the fractional difference MTF shows that frequencies out to 23 cy/mm are well-maintained. The spreading present in Figure \ref  {fig:airy_even} is less prevalent in the radial profile. The RMS difference of the PSF data is 1.6e-6, indicating that this distribution results in a more accurate simulation.}}{35}{figure.10}\protected@file@percent }
+\newlabel{fig:airy_fib}{{10}{35}{Comparisons of the PSF (top) and MTF (middle) for GBD with Fibonacci sampling for the same number of beamlets as Figure \ref {fig:airy_even} (left) and analytical airy pattern (middle). The PSFs are given in units of normalized intensity, such that the sum of the energy in the PSF is unity. The fractional difference is plotted on the right, with the MTF plotted out to the cutoff frequency of the HST of around 25 cy/mm. The azimuthally averaged radial profile is plotted on the bottom. The presence of ripples in the fractional difference PSF is noticeably lower than Figure \ref {fig:airy_even}, and the fractional difference MTF shows that frequencies out to 23 cy/mm are well-maintained. The spreading present in Figure \ref {fig:airy_even} is less prevalent in the radial profile. The RMS difference of the PSF data is 1.6e-6, indicating that this distribution results in a more accurate simulation}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The RMS difference between the sum-normalized GBD PSF and analytical Airy function for the Fibonacci (blue circles) and Even (black squares) sample schemes. For the circular aperture it is clear that the Fibonacci sample scheme is more accurate for every case given a circular aperture. However, the returns are diminishing as the number of beamlets increases.}}{36}{figure.11}\protected@file@percent }
+\newlabel{fig:rms_vs_sample_airy}{{11}{36}{The RMS difference between the sum-normalized GBD PSF and analytical Airy function for the Fibonacci (blue circles) and Even (black squares) sample schemes. For the circular aperture it is clear that the Fibonacci sample scheme is more accurate for every case given a circular aperture. However, the returns are diminishing as the number of beamlets increases}{figure.11}{}}
 \citation{Worku19}
-\@writefile{loc}{\ChangesListline {added}{Added}{To further test GBD's capability to model a more realistic observatory PSF, we add obscurations in the entrance pupil that correspond to the secondary mirror and supporting spiders. We also tilt the secondary mirror by 0.05 degrees to aberrate the beam. By doing so, we simultaneously test our algorithm's ability to capture aberrations from optical misalignment. The results of this simulation are shown in Figure \ref  {fig:aberrated}}{41}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces \added {Simulations of an aberrated PSF with secondary support structure in the entrance pupil of our HST model given in Table \ref  {tab:fiducial_observatory_specs}. The GBD PSF (left) and Zemax Huygens PSF (right) have very similar structure, with the dominant difference in structure being the features from the sharp-edge diffraction from the spiders (shown in fractional difference on the right). This simulation helps quantify the degree to which GBD's difficulty in modeling sharp-edge diffraction effects. The RMS difference of the PSF data is 7.5e-6.}}}{41}{figure.15}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{Simulations of an aberrated PSF with secondary support structure in the entrance pupil of our HST model given in Table \ref  {tab:fiducial_observatory_specs}. The GBD PSF (left) and Zemax Huygens PSF (right) have very similar structure, with the dominant difference in structure being the features from the sharp-edge diffraction from the spiders (shown in fractional difference on the right). This simulation helps quantify the degree to which GBD's difficulty in modeling sharp-edge diffraction effects. The RMS difference of the PSF data is 7.5e-6.}{41}}
-\newlabel{fig:aberrated}{{15}{41}{\added {Simulations of an aberrated PSF with secondary support structure in the entrance pupil of our HST model given in Table \ref {tab:fiducial_observatory_specs}. The GBD PSF (left) and Zemax Huygens PSF (right) have very similar structure, with the dominant difference in structure being the features from the sharp-edge diffraction from the spiders (shown in fractional difference on the right). This simulation helps quantify the degree to which GBD's difficulty in modeling sharp-edge diffraction effects. The RMS difference of the PSF data is 7.5e-6.}}{figure.15}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{The data in figure \ref  {fig:aberrated} was simulated in a comparison between our proposed algorithm and Zemax's Huygens PSF analysis tool. In this simulation we vignette any Gaussian Beam that has any of its differential rays vignetted. Our results show extremely similar structure in the PSF from both the aberation induced by the secondary mirror misalignment and the structure from the HST spiders. The fractional difference reveals that the first couple "rings" of the PSFs are almost identical, indicating that the low-order aberrations were sufficiently simulated by GBD. There is a larger fractional difference in the dimmer structures that result from the sharp edges of the secondary obscuration and spiders, which is a known challenge for GBD simulations. This result can be further improved by careful implementation of alternative beamlet profiles, such as Worku and Gross's truncated beamlets\cite  {Worku19}, or higher-order transverse electric field modes (e.g. Hermite, Laguerre-Gaussian). However, the result using fundamental Gaussian modes is encouraging, since the RMS difference of the PSFs is within the same order of magnitude as the results shown in Figures \ref  {fig:airy_even} and \ref  {fig:airy_fib}. Now that our algorithm's ability to perform PSF simulations has been verified, we can analyze the degree to which it introduces artifacts in high-contrast imaging simulations.}{42}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Coronagraphic Response}{42}{subsection.4.3}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{1600}{42}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{4.95}{42}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Simulation parameters for the result shown in Figure \ref  {fig:nonparaxial_coronagraph}. }}{42}{table.3}\protected@file@percent }
-\newlabel{tab:my_label}{{3}{42}{Simulation parameters for the result shown in Figure \ref {fig:nonparaxial_coronagraph}}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Simulations of an aberrated PSF with secondary support structure in the entrance pupil of our HST model given in Table \ref  {tab:fiducial_observatory_specs}. The GBD PSF (left) and Zemax Huygens PSF (middle) have very similar structure, with the dominant difference in structure being the features from the sharp-edge diffraction from the spiders (shown in fractional difference on the right). This simulation helps quantify GBD's difficulty in modeling sharp-edge diffraction effects. The RMS difference of the PSF data is 7.5e-6.}}{37}{figure.12}\protected@file@percent }
+\newlabel{fig:aberrated}{{12}{37}{Simulations of an aberrated PSF with secondary support structure in the entrance pupil of our HST model given in Table \ref {tab:fiducial_observatory_specs}. The GBD PSF (left) and Zemax Huygens PSF (middle) have very similar structure, with the dominant difference in structure being the features from the sharp-edge diffraction from the spiders (shown in fractional difference on the right). This simulation helps quantify GBD's difficulty in modeling sharp-edge diffraction effects. The RMS difference of the PSF data is 7.5e-6}{figure.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Coronagraph Response}{38}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Simulation parameters for the result shown in Figure \ref  {fig:nonparaxial_coronagraph}. }}{39}{table.2}\protected@file@percent }
+\newlabel{tab:coro_params}{{2}{39}{Simulation parameters for the result shown in Figure \ref {fig:nonparaxial_coronagraph}}{table.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Comparison of the coronagraph PSF from 3-30 $\lambda / D$ generated by a solely Fraunhofer diffraction model (a) and the proposed Hybrid propagation scheme for a varying number of beamlets across the 2.4m unobscured HST aperture with an overlap factor of 2. (b) was generated with 200 beamlets, (c) with 300 beamlets, (d) with 400 beamlets, (e) with 500 beamlets, and (f) with 600 beamlets across the aperture. These data were generated by producing a PSF with the given propagation scheme and then propagating it through HCIPy's VortexCoronagraph class with a topological charge of 2. To reflect the residual starlight's astrophysical flux ratio ``contrast", the PSF data are normalized to the maximum of an off-axis PSF at $\approx 16 \lambda /D$ that propagates through the VortexCoronagraph. The mean contrast of the masked region (C) is shown on each image. The residuals from the Hybrid propagation (b-f) are brighter than the equivalent Fraunhofer simulation, and minimize at the 500 beamlet case. This is particularly apparent near the inner working angle, where we see a maximum signal of $\approx $ $1 \times 10^{-8}$ for the 200 beamlet case decrease to $\approx 5 \times 10^{-9}$ in the 500 beamlet case.}}{39}{figure.13}\protected@file@percent }
+\newlabel{fig:nonparaxial_coronagraph}{{13}{39}{Comparison of the coronagraph PSF from 3-30 $\lambda / D$ generated by a solely Fraunhofer diffraction model (a) and the proposed Hybrid propagation scheme for a varying number of beamlets across the 2.4m unobscured HST aperture with an overlap factor of 2. (b) was generated with 200 beamlets, (c) with 300 beamlets, (d) with 400 beamlets, (e) with 500 beamlets, and (f) with 600 beamlets across the aperture. These data were generated by producing a PSF with the given propagation scheme and then propagating it through HCIPy's VortexCoronagraph class with a topological charge of 2. To reflect the residual starlight's astrophysical flux ratio ``contrast", the PSF data are normalized to the maximum of an off-axis PSF at $\approx 16 \lambda /D$ that propagates through the VortexCoronagraph. The mean contrast of the masked region (C) is shown on each image. The residuals from the Hybrid propagation (b-f) are brighter than the equivalent Fraunhofer simulation, and minimize at the 500 beamlet case. This is particularly apparent near the inner working angle, where we see a maximum signal of $\approx $ $1 \times 10^{-8}$ for the 200 beamlet case decrease to $\approx 5 \times 10^{-9}$ in the 500 beamlet case}{figure.13}{}}
 \citation{Worku19}
-\citation{2015ApJStark}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Comparison of the Coronagraphic PSF \added {from 3-30 $\lambda / D$} generated by a solely Fraunhofer diffraction model (a) and the proposed Hybrid propagation scheme for a varying number of beamlets across the 2.4m \replaced {HST}{hubble} aperture with an overlap factor of \replaced {2}{1.7}. (b) was generated with 200 beamlets, (c) with 300 beamlets, (d) with 400 beamlets, \added {(e) with 500 beamlets, and (f) with 600 beamlets across the aperture}. These data were generated by producing a PSF with the given propagation scheme and then propagating it through HCIPy's VortexCoronagraph class with a topological charge of \replaced {2}{6}. To reflect the residual starlight's astrophysical flux ratio ``contrast", the PSF data are normalized to the maximum of an off-axis PSF at \replaced {$\approx 16 \lambda /D$}{$\approx 25 \lambda /D$} that propagates through the VortexCoronagraph. The mean contrast of the masked region (C) is shown on each image. The residuals \replaced {from the Hybrid propagation (b-f) are brighter than the equivalent Fraunhofer simulation, and minimize at the 500 beamlet case. This is particularly apparent near the inner working angle, where we see a signal of $\approx $ $1 \times 10^-8$ for the 200 beamlet case decrease to $\approx 5 \times 10^{-9}$ in the 500 beamlet case. }{from the Fibonacci distribution are clearly visible as high-frequency rings in b-d, which are at greater than earthlike exoplanet ($10^{-10}$) contrast. However, it is encouraging that with more beamlets the prominent circles shown in (b) become around the same level as the background in (d).} This is indicative of GBD's ability to be further improved with \deleted {more computational resources or} a more judicious choice of beamlets.}}{43}{figure.16}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {added}{Added}{from 3-30 $\lambda / D$}{43}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{HST}{43}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{2}{43}}
-\@writefile{loc}{\ChangesListline {added}{Added}{(e) with 500 beamlets, and (f) with 600 beamlets across the aperture}{43}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{2}{43}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{$\approx 16 \lambda /D$}{43}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{from the Hybrid propagation (b-f) are brighter than the equivalent Fraunhofer simulation, and minimize at the 500 beamlet case. This is particularly apparent near the inner working angle, where we see a signal of $\approx $ $1 \times 10^-8$ for the 200 beamlet case decrease to $\approx 5 \times 10^{-9}$ in the 500 beamlet case. }{43}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{more computational resources or}{43}}
-\newlabel{fig:nonparaxial_coronagraph}{{16}{43}{Comparison of the Coronagraphic PSF \added {from 3-30 $\lambda / D$} generated by a solely Fraunhofer diffraction model (a) and the proposed Hybrid propagation scheme for a varying number of beamlets across the 2.4m \replaced {HST}{hubble} aperture with an overlap factor of \replaced {2}{1.7}. (b) was generated with 200 beamlets, (c) with 300 beamlets, (d) with 400 beamlets, \added {(e) with 500 beamlets, and (f) with 600 beamlets across the aperture}. These data were generated by producing a PSF with the given propagation scheme and then propagating it through HCIPy's VortexCoronagraph class with a topological charge of \replaced {2}{6}. To reflect the residual starlight's astrophysical flux ratio ``contrast", the PSF data are normalized to the maximum of an off-axis PSF at \replaced {$\approx 16 \lambda /D$}{$\approx 25 \lambda /D$} that propagates through the VortexCoronagraph. The mean contrast of the masked region (C) is shown on each image. The residuals \replaced {from the Hybrid propagation (b-f) are brighter than the equivalent Fraunhofer simulation, and minimize at the 500 beamlet case. This is particularly apparent near the inner working angle, where we see a signal of $\approx $ $1 \times 10^-8$ for the 200 beamlet case decrease to $\approx 5 \times 10^{-9}$ in the 500 beamlet case. }{from the Fibonacci distribution are clearly visible as high-frequency rings in b-d, which are at greater than earthlike exoplanet ($10^{-10}$) contrast. However, it is encouraging that with more beamlets the prominent circles shown in (b) become around the same level as the background in (d).} This is indicative of GBD's ability to be further improved with \deleted {more computational resources or} a more judicious choice of beamlets}{figure.16}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{that}{43}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{generally minimizes in average contrast until the 600 beamlet case (Figure \ref  {fig:nonparaxial_coronagraph}f) where there is a slight increase.}{44}}
-\@writefile{loc}{\ChangesListline {added}{Added}{which can be improved with greater sampling}{44}}
-\@writefile{loc}{\ChangesListline {added}{Added}{ The increase in average contrast in figure \ref  {fig:nonparaxial_coronagraph}f suggests that we have determined the limit that traditional GBD can be used to practically mimic a PSF given this sampling of the focal plane.}{44}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Python's ability to vectorize matrix operations and other Python packages to accelerate the exponential calculation}{44}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{numpy's array broadcasting operations, and numexpr's accelerated exponential calculation}{44}}
-\@writefile{loc}{\ChangesListline {added}{Added}{discussed in detail in Appendix A}{44}}
-\@writefile{loc}{\ChangesListline {added}{Added}{near the inner working angle}{44}}
-\@writefile{loc}{\ChangesListline {added}{Added}{It is also worth noting that this result suggests that with sufficient sampling, GBD can presently be used to simulate the PSFs for systems with less stringent contrast floors.}{45}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{have created a platform for the algorithm's development in an open-source environment and will outline a road map for the most pressing optimizations that can be conducted by future investigations.}{45}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Summary and Conclusions}{45}{section.5}\protected@file@percent }
-\newlabel{sec:conclusion}{{5}{45}{Summary and Conclusions}{section.5}{}}
-\@writefile{loc}{\ChangesListline {added}{Added}{near}{45}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{$10^{-9}$}{45}}
-\@writefile{loc}{\ChangesListline {added}{Added}{at $< 10^{-9}$ with an numerical average contrast of $4\times 10^{-11}$}{45}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{We also outline a path forward for the ongoing development of this technique to make it suitable for simulations of Earth-like exoplanet signals at contrasts of $10^{-10}$.}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Summary and Conclusions}{41}{section.5}\protected@file@percent }
+\newlabel{sec:conclusion}{{5}{41}{Summary and Conclusions}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Future Work}{41}{subsection.5.1}\protected@file@percent }
 \citation{Worku19}
+\citation{Harvey15}
 \citation{lam_numba_2015,robert_mcleod_2018_2483274}
 \citation{Desdoigts2022,Wong21,Pope21}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Future Work}{46}{subsection.5.1}\protected@file@percent }
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{360,000}{46}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{2,560,000}{46}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{100TB}{46}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{24}{46}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Preliminary efforts in accelerated computing are discussed in Appendix A. Through careful optimization of our algorithm we were able to decrease the runtime considerably.}{46}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{is capable of}{46}}
 \citation{Chippman15}
 \citation{Worku17}
 \citation{anche_inprep}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{The Beamlet decomposition algorithm}{47}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Preliminary experiments on GPU's have shown a decrease in runtime by a factor of $\approx $16.}{47}}
-\@writefile{loc}{\ChangesListline {added}{Added}{The use of a beamlet decomposition algorithm completely integrates a diffraction model with a ray model of an optical system, resulting in a more physically complete modeling pipeline}{47}}
-\@writefile{loc}{\ChangesListline {added}{Added}{, which may be sensitive to polarization aberrations}{47}}
 \citation{Ashcraft_poke_2022}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Open-Source Science and Engineering}{43}{subsection.5.2}\protected@file@percent }
 \citation{robert_mcleod_2018_2483274}
 \citation{lam_numba_2015}
 \citation{Doug18}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Open-Source Science and Engineering}{48}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Appendix A: Accelerated Computing}{48}{section.6}\protected@file@percent }
-\newlabel{sec:appendixA}{{6}{48}{Appendix A: Accelerated Computing}{section.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Accelerated Computing}{48}{subsection.6.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Run time comparison for a 50x50 grid of Gaussian beamlets on a 256 x 256 detector grid v.s. number of CPU cores used. Numexpr considerably accelerates the exponential calculation given multiple processing cores, and is an encouraging path forward for further parallelization.}}{50}{figure.17}\protected@file@percent }
-\newlabel{fig:runtime_sim}{{17}{50}{Run time comparison for a 50x50 grid of Gaussian beamlets on a 256 x 256 detector grid v.s. number of CPU cores used. Numexpr considerably accelerates the exponential calculation given multiple processing cores, and is an encouraging path forward for further parallelization}{figure.17}{}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{Using the Cupy python package, adding support for GPU's was made quite simple given its compatibility with the numpy API. Preliminary experiments using our beamlet decomposition algorithm show a $\approx $16$\times $ decrease in computation time across all cases tested. We have added GPU support though Cupy in our poke package and plan to publish a formal study quantifying the degree to which GBD can benefit from accelerated computing in a future report.}{50}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Appendix B: Sample PokE code}{50}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Appendix A: Full Differential Ray Transfer Matrix Calculation}{44}{section.6}\protected@file@percent }
+\newlabel{sec:appendixA}{{6}{44}{Appendix A: Full Differential Ray Transfer Matrix Calculation}{section.6}{}}
+\newlabel{sec:appc}{{6}{44}{Appendix A: Full Differential Ray Transfer Matrix Calculation}{section.6}{}}
+\newlabel{eq:total_abcd_matrix}{{32}{44}{Appendix A: Full Differential Ray Transfer Matrix Calculation}{equation.6.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Appendix B: Accelerated Computing}{44}{section.7}\protected@file@percent }
+\newlabel{sec:appendixB}{{7}{44}{Appendix B: Accelerated Computing}{section.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Run time comparison for a 50x50 grid of Gaussian beamlets on a 256 x 256 detector grid v.s. number of CPU cores used. Numexpr considerably accelerates the exponential calculation given multiple processing cores, and is an encouraging path forward for further parallelization.}}{46}{figure.14}\protected@file@percent }
+\newlabel{fig:runtime_sim}{{14}{46}{Run time comparison for a 50x50 grid of Gaussian beamlets on a 256 x 256 detector grid v.s. number of CPU cores used. Numexpr considerably accelerates the exponential calculation given multiple processing cores, and is an encouraging path forward for further parallelization}{figure.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Runtime comparison of the iterations of the GBD algorithm applied in Python 3.8. The version using nested for loops is plotted in black, and high-beamlet simulations were computationally prohibitive. The runtime for the vectorized code is shown in blue, and the vectorized code with more efficient linear algebra operations (determinant, inverse) is shown in red. Overall, the decrease in runtime from the black curve to the red curve is $\approx 40\times $, which enabled the highly-sampled simulations in Figure \ref  {fig:nonparaxial_coronagraph}.}}{47}{figure.15}\protected@file@percent }
+\newlabel{fig:runtime_compare}{{15}{47}{Runtime comparison of the iterations of the GBD algorithm applied in Python 3.8. The version using nested for loops is plotted in black, and high-beamlet simulations were computationally prohibitive. The runtime for the vectorized code is shown in blue, and the vectorized code with more efficient linear algebra operations (determinant, inverse) is shown in red. Overall, the decrease in runtime from the black curve to the red curve is $\approx 40\times $, which enabled the highly-sampled simulations in Figure \ref {fig:nonparaxial_coronagraph}}{figure.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Code, Data, and Materials Availability Statement}{47}{section.8}\protected@file@percent }
+\bibdata{report,ewan_bib}
+\bibcite{andersen_integrated_2011}{1}
+\bibcite{Dube2022}{2}
+\bibcite{goodman17}{3}
+\bibcite{breckinridge_exoplanet_2018}{4}
+\bibcite{Breck19}{5}
+\bibcite{anche_analysis_2018}{6}
+\bibcite{anche_inprep}{7}
+\bibcite{Chippman15}{8}
+\bibcite{Harrington2017}{9}
+\bibcite{Mather2004}{10}
+\bibcite{Guyon_2006}{11}
+\bibcite{2015ApJStark}{12}
+\bibcite{2018Pueyo}{13}
+\bibcite{Lozi18}{14}
+\bibcite{Males18}{15}
+\bibcite{Femenia16}{16}
+\bibcite{Macintosh14}{17}
+\bibcite{refId0}{18}
+\bibcite{thompson_near_1994}{19}
+\bibcite{horner_near-infrared_2004}{20}
+\bibcite{Nircam_exoplanet}{21}
+\bibcite{decadal_survey_on_astronomy_and_astrophysics_2020_astro2020_pathways_2021}{22}
+\bibcite{Belikov2021}{23}
+\bibcite{shaklan19}{24}
+\bibcite{Howard22}{25}
+\bibcite{Howard11}{26}
+\bibcite{Krist93}{27}
+\bibcite{Krist07}{28}
+\bibcite{Perrin12}{29}
+\bibcite{2016ascl.soft02018P}{30}
+\bibcite{Doug18}{31}
+\bibcite{por2018hcipy}{32}
+\bibcite{Townson:19}{33}
+\bibcite{Dube2019}{34}
+\bibcite{Riggs18}{35}
+\bibcite{Allen2021OpenSource}{36}
+\bibcite{krist_practical_2010}{37}
+\bibcite{vanderbei_diffraction_2006}{38}
+\bibcite{guyon_phase_nodate}{39}
+\bibcite{krist_numerical_2015}{40}
+\bibcite{Nemati2023}{41}
+\bibcite{Pyxel}{42}
+\bibcite{pyklip}{43}
+\bibcite{nmfimaging}{44}
+\bibcite{Krist18}{45}
+\bibcite{Greynolds86}{46}
+\bibcite{Harvey15}{47}
+\bibcite{modeling_coherence_fred}{48}
+\bibcite{bsp_in_codev}{49}
+\bibcite{Worku17}{50}
+\bibcite{Worku:18}{51}
+\bibcite{Worku19}{52}
+\bibcite{greynolds_ten_2020}{53}
+\bibcite{Siegman_1986}{54}
+\bibcite{arnaud_representation_1985}{55}
+\bibcite{worku_vectorial_2017}{56}
+\bibcite{Collins:70}{57}
+\bibcite{Worku:20}{58}
+\bibcite{Greynolds14}{59}
+\bibcite{Ashcraft2020}{60}
+\bibcite{Ashcraft_poke_2022}{61}
+\bibcite{msgpack}{62}
+\bibcite{rayoptics}{63}
+\bibcite{cai_decentered_nodate}{64}
+\bibcite{Brouwer64}{65}
+\bibcite{Stone:97}{66}
+\bibcite{koshel_novel_2001}{67}
+\bibcite{Mei_2005}{68}
+\bibcite{CAI2002139}{69}
+\bibcite{mawet_annular_2005}{70}
+\bibcite{lee_experimental_2006}{71}
+\bibcite{mawet_vector_2010}{72}
+\bibcite{serabyn_vector_2019-1}{73}
+\bibcite{lam_numba_2015}{74}
+\bibcite{robert_mcleod_2018_2483274}{75}
+\bibcite{Desdoigts2022}{76}
+\bibcite{Wong21}{77}
+\bibcite{Pope21}{78}
+\bibcite{harris2020array}{79}
+\bibcite{Hunter:2007}{80}
+\bibcite{PER-GRA:2007}{81}
+\bibcite{astropy:2013}{82}
+\bibcite{astropy:2018}{83}
+\bibcite{astropy:2022}{84}
+\bibcite{2020SciPy-NMeth}{85}
+\bibstyle{spiejour}
 \citation{Perrin12}
 \citation{por2018hcipy}
 \citation{Dube2019}
@@ -375,21 +294,5 @@
 \citation{2020SciPy-NMeth}
 \citation{lam_numba_2015}
 \citation{robert_mcleod_2018_2483274}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Acknowledgments}{51}{section.8}\protected@file@percent }
-\citation{Krist18}
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of the operating principle of GBD in one dimension. The aperture function for traditional imaging systems is shown in (a) as a top-hat function of uniform amplitude. The decomposition of this function into a discrete set of Gaussian beams is shown in (b), which shows nine evenly-spaced Gaussian profiles before their coherent summation, which is shown in (c). The coherent sum (black) of these nine beamlets shows that the beamlets are incapable of perfectly reconstructing the original aperture function (dashed red), specifically the sharp edge and uniform amplitude. More beamlets are needed for a more accurate reconstruction, which is shown in (d) for 199 beamlets. The amplitude ripple has virtually vanished, and the field near the aperture edges is almost entirely recovered.}{53}}
-\citation{rayoptics}
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of Poke's use as an interface to open-source ray-based physical optics. Poke only requires an interface between a ray tracing engine (orange, left) to generate and save a Rayfront object, which includes all ray data necessary for the GBD calculation. Currently, Poke supports sequential systems in CODE V and Zemax, but we are working on adding support for open-source packages that have ray tracers, like ray-optics\cite  {rayoptics}. The GBD field that Poke computes can then be sent to any open-source diffraction modeling package (yellow, right) to complete the hybrid propagation model.}{54}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of relevant ray parameters necessary to propagate the ray data to the transversal plane, where we evaluate the Gaussian field that intersects with a detector pixel. A ray that defines a Gaussian beam is placed on the source plane (leftmost vertical dashed line) with some direction ($\mathbf  {k}_{ray,S}$) and position ($\mathbf  {r}_{ray,S}$) and propagated though the system. At the detector plane (rightmost vertical dashed line), the ray's direction and positions ($\mathbf  {k}_{ray,D}$ and $\mathbf  {r}_{ray,D}$ respectively) have been transformed by the optical system. To propagate the rays to the transversal plane (tilted dashed line) that intersects the pixel at $\mathbf  {r}_{pixel,D}$ where the field evaluation occurs, it must be moved a distance $\Delta _{ray}$ along the ray path in detector space.}{55}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Illustration of the hybrid propagation physics model used to produce the results in this section. The system perscription in table \ref  {tab:fiducial_observatory_specs} is loaded into Zemax OpticStudio and shown on the left (labeled HST). The phase of the vector vortex coronagraph (VVC) is shown in the middle. The GBD PSF is computed at this plane and propagated through the coronagraph using HCIPy to arrive at the final image at the detector plane.}{56}}
-\@writefile{loc}{\ChangesListline {added}{Added}{the}{57}}
-\@writefile{loc}{\ChangesListline {added}{Added}{Simulations of an aberrated PSF with secondary support structure in the entrance pupil of our HST model given in Table \ref  {tab:fiducial_observatory_specs}. The GBD PSF (left) and Zemax Huygens PSF (right) have very similar structure, with the dominant difference in structure being the features from the sharp-edge diffraction from the spiders (shown in fractional difference on the right). This simulation helps quantify the degree to which GBD's difficulty in modeling sharp-edge diffraction effects. The RMS difference of the PSF data is 7.5e-6.}{58}}
-\@writefile{loc}{\ChangesListline {added}{Added}{from 3-30 $\lambda / D$}{59}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{HST}{59}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{2}{59}}
-\@writefile{loc}{\ChangesListline {added}{Added}{(e) with 500 beamlets, and (f) with 600 beamlets across the aperture}{59}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{2}{59}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{$\approx 16 \lambda /D$}{59}}
-\@writefile{loc}{\ChangesListline {replaced}{Replaced}{from the Hybrid propagation (b-f) are brighter than the equivalent Fraunhofer simulation, and minimize at the 500 beamlet case. This is particularly apparent near the inner working angle, where we see a signal of $\approx $ $1 \times 10^-8$ for the 200 beamlet case decrease to $\approx 5 \times 10^{-9}$ in the 500 beamlet case. }{59}}
-\@writefile{loc}{\ChangesListline {deleted}{Deleted}{more computational resources or}{59}}
-\gdef \@abspage@last{60}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Acknowledgments}{58}{section.9}\protected@file@percent }
+\gdef \@abspage@last{59}

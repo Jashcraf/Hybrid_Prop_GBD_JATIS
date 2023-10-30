@@ -66,7 +66,7 @@ O.~Guyon, E.~A. Pluzhnik, M.~J. Kuchner, {\em et~al.}, ``Theoretical limits on
 
 \bibitem{2015ApJStark}
 C.~C. {Stark}, A.~{Roberge}, A.~{Mandell}, {\em et~al.}, ``{Lower Limits on
-  Aperture Size for an ExoEarth Detecting Coronagraphic Mission},'' {\em \apj}
+  Aperture Size for an ExoEarth Detecting Coronagraphic Mission},'' {\em ApJ}
   {\bf 808}, 149  (2015).
 
 \bibitem{2018Pueyo}
@@ -415,7 +415,7 @@ A.~{Wong}, B.~{Pope}, L.~{Desdoigts}, {\em et~al.}, ``{Phase retrieval and
 
 \bibitem{Pope21}
 B.~J.~S. {Pope}, L.~{Pueyo}, Y.~{Xin}, {\em et~al.}, ``{Kernel Phase and
-  Coronagraphy with Automatic Differentiation},'' {\em \apj} {\bf 907}, 40
+  Coronagraphy with Automatic Differentiation},'' {\em ApJ} {\bf 907}, 40
   (2021).
 
 \bibitem{harris2020array}
@@ -433,13 +433,13 @@ F.~P\'erez and B.~E. Granger, ``{IP}ython: a system for interactive scientific
 
 \bibitem{astropy:2013}
 {Astropy Collaboration}, T.~P. {Robitaille}, E.~J. {Tollerud}, {\em et~al.},
-  ``{Astropy: A community Python package for astronomy},'' {\em \aap} {\bf
+  ``{Astropy: A community Python package for astronomy},'' {\em AAP} {\bf
   558}, A33  (2013).
 
 \bibitem{astropy:2018}
 {Astropy Collaboration}, A.~M. {Price-Whelan}, B.~M. {Sip{\H{o}}cz}, {\em
   et~al.}, ``{The Astropy Project: Building an Open-science Project and Status
-  of the v2.0 Core Package},'' {\em \aj} {\bf 156}, 123  (2018).
+  of the v2.0 Core Package},'' {\em AJ} {\bf 156}, 123  (2018).
 
 \bibitem{astropy:2022}
 {Astropy Collaboration}, A.~M. {Price-Whelan}, P.~L. {Lim}, {\em et~al.},
