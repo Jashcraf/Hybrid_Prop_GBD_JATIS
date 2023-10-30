@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: spiejour.bst
+Database file #1: report.bib
+Warning--entry type for "robert_mcleod_2018_2483274" isn't style-file defined
+--line 1750 of file report.bib
+Database file #2: ewan_bib.bib
+Warning--empty volume in anche_inprep
+Warning--empty publisher in 2018Pueyo
+Warning--empty volume in Lozi18
+Warning--empty title in shaklan19
+Warning--empty volume in shaklan19
+Warning--empty title in guyon_phase_nodate
+Warning--empty volume in guyon_phase_nodate
+Warning--empty year in guyon_phase_nodate
+Warning--empty author in modeling_coherence_fred
+Warning--empty year in modeling_coherence_fred
+Warning--empty author in bsp_in_codev
+Warning--empty volume in Ashcraft2020
+Warning--empty volume in cai_decentered_nodate
+Warning--empty title in Brouwer64
+Warning--empty volume in Brouwer64
+You've used 85 entries,
+            2022 wiz_defined-function locations,
+            1054 strings with 35455 characters,
+and the built_in function-call counts, 25889 in all, are:
+= -- 2559
+> -- 1251
+< -- 0
++ -- 562
+- -- 292
+* -- 1933
+:= -- 3476
+add.period$ -- 90
+call.type$ -- 85
+change.case$ -- 84
+chr.to.int$ -- 0
+cite$ -- 100
+duplicate$ -- 1340
+empty$ -- 2180
+format.name$ -- 373
+if$ -- 6335
+int.to.chr$ -- 0
+int.to.str$ -- 85
+missing$ -- 75
+newline$ -- 263
+num.names$ -- 131
+pop$ -- 402
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1250
+stack$ -- 0
+substring$ -- 1165
+swap$ -- 722
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 15
+while$ -- 221
+width$ -- 87
+write$ -- 812
+(There were 16 warnings)

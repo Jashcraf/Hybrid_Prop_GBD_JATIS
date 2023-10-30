@@ -1,0 +1,455 @@
+\begin{thebibliography}{10}
+
+\bibitem{andersen_integrated_2011}
+T.~Andersen and A.~Enmark, {\em Integrated {Modeling} of {Telescopes}},
+  vol.~377 of {\em Astrophysics and {Space} {Science} {Library}}, Springer New
+  York, New York, NY  (2011).
+
+\bibitem{Dube2022}
+B.~D. {Dube}, A.~J. {Riggs}, B.~D. {Kern}, {\em et~al.}, ``{Exascale integrated
+  modeling of low-order wavefront sensing and control for the Roman Coronagraph
+  instrument},'' {\em Journal of the Optical Society of America A} {\bf 39},
+  C133  (2022).
+
+\bibitem{goodman17}
+J.~W. Goodman, ``Introduction to fourier optics,'' {\em Introduction to Fourier
+  optics, 3rd ed., by JW Goodman. Englewood, CO: Roberts \& Co. Publishers,
+  2005} {\bf 1}  (2005).
+
+\bibitem{breckinridge_exoplanet_2018}
+J.~B. Breckinridge, J.~E. Harvey, T.~Hull, {\em et~al.}, ``Exoplanet telescope
+  diffracted light minimized: the pinwheel-pupil solution,'' in {\em Space
+  {Telescopes} and {Instrumentation} 2018: {Optical}, {Infrared}, and
+  {Millimeter} {Wave}},  H.~A. MacEwen, M.~Lystrup, G.~G. Fazio, {\em et~al.},
+  Eds., 61, SPIE, (Austin, United States)  (2018).
+
+\bibitem{Breck19}
+J.~B. Breckinridge, J.~E. Harvey, R.~Irvin, {\em et~al.}, ``{ExoPlanet Optics:
+  conceptual design processes for stealth telescopes},'' in {\em UV/Optical/IR
+  Space Telescopes and Instruments: Innovative Technologies and Concepts IX},
+  A.~A. Barto, J.~B. Breckinridge, and H.~P. Stahl, Eds.,  {\bf 11115}, 98 --
+  108, International Society for Optics and Photonics, SPIE  (2019).
+
+\bibitem{anche_analysis_2018}
+R.~M. Anche, A.~K. Sen, G.~C. Anupama, {\em et~al.}, ``Analysis of polarization
+  introduced due to the telescope optics of the {Thirty} {Meter} {Telescope},''
+  {\em Journal of Astronomical Telescopes, Instruments, and Systems} {\bf 4},
+  018003  (2018).
+\newblock Publisher: SPIE.
+
+\bibitem{anche_inprep}
+R.~Anche, J.~N. Ashcraft, S.~Y. Haffert, {\em et~al.}, ``Polarization
+  aberrations in next-generation giant segmented mirror telescopes (gsmts) i.
+  effect on the coronagraphic performance,'' {\em Astronomy and Astrophysics}
+  (in review).
+
+\bibitem{Chippman15}
+R.~A. Chipman, W.~S.~T. Lam, and J.~Breckinridge, ``Polarization aberration in
+  astronomical telescopes,'' 96130H, (San Diego, California, United States)
+  (2015).
+
+\bibitem{Harrington2017}
+D.~M. Harrington and S.~R. Sueoka, ``Polarization modeling and predictions for
+  dkist part 1: Telescope and example instrument configurations,''  (2017).
+
+\bibitem{Mather2004}
+T.~T. Hyde, K.~Q. Ha, J.~D. Johnston, {\em et~al.}, ``{Integrated modeling
+  activities for the James Webb Space Telescope: optical jitter analysis},'' in
+  {\em Optical, Infrared, and Millimeter Space Telescopes},  J.~C. Mather, Ed.,
+   {\bf 5487}, 588 -- 599, International Society for Optics and Photonics, SPIE
+   (2004).
+
+\bibitem{Guyon_2006}
+O.~Guyon, E.~A. Pluzhnik, M.~J. Kuchner, {\em et~al.}, ``Theoretical limits on
+  extrasolar terrestrial planet detection with coronagraphs,'' {\em The
+  Astrophysical Journal Supplement Series} {\bf 167}, 81--99  (2006).
+
+\bibitem{2015ApJStark}
+C.~C. {Stark}, A.~{Roberge}, A.~{Mandell}, {\em et~al.}, ``{Lower Limits on
+  Aperture Size for an ExoEarth Detecting Coronagraphic Mission},'' {\em \apj}
+  {\bf 808}, 149  (2015).
+
+\bibitem{2018Pueyo}
+L.~{Pueyo}, ``{Direct Imaging as a Detection Technique for Exoplanets},'' in
+  {\em Handbook of Exoplanets},  H.~J. {Deeg} and J.~A. {Belmonte}, Eds., 10
+  (2018).
+
+\bibitem{Lozi18}
+J.~Lozi, O.~Guyon, N.~Jovanovic, {\em et~al.}, ``{SCExAO}, an instrument with a
+  dual purpose: perform cutting-edge science and develop new technologies,''
+  {\em Adaptive Optics Systems VI} , 270  (2018).
+\newblock arXiv: 1809.08301.
+
+\bibitem{Males18}
+J.~R. Males, L.~M. Close, K.~L. Miller, {\em et~al.}, ``{MagAO}-{X}: project
+  status and first laboratory results,'' in {\em Adaptive {Optics} {Systems}
+  {VI}},  D.~Schmidt, L.~Schreiber, and L.~M. Close, Eds., 9, SPIE, (Austin,
+  United States)  (2018).
+
+\bibitem{Femenia16}
+B.~F. Castell{\'a}, E.~Serabyn, D.~Mawet, {\em et~al.}, ``{Commissioning and
+  first light results of an L'-band vortex coronagraph with the Keck II
+  adaptive optics NIRC2 science instrument},'' in {\em Adaptive Optics Systems
+  V},  E.~Marchetti, L.~M. Close, and J.-P. V{\'e}ran, Eds.,  {\bf 9909},
+  990922, International Society for Optics and Photonics, SPIE  (2016).
+
+\bibitem{Macintosh14}
+B.~A. Macintosh, A.~Anthony, J.~Atwood, {\em et~al.}, ``{The Gemini planet
+  imager: first light and commissioning},'' in {\em Adaptive Optics Systems
+  IV},  E.~Marchetti, L.~M. Close, and J.-P. V{\'e}ran, Eds.,  {\bf 9148},
+  91480J, International Society for Optics and Photonics, SPIE  (2014).
+
+\bibitem{refId0}
+{Beuzit, J.-L.}, {Vigan, A.}, {Mouillet, D.}, {\em et~al.}, ``Sphere: the
+  exoplanet imager for the very large telescope,'' {\em A\&A} {\bf 631}, A155
+  (2019).
+
+\bibitem{thompson_near_1994}
+R.~I. Thompson, ``Near infrared camera and multiobject spectrometer ({NICMOS}):
+  the near infrared space mission on {HST},'' in {\em Space {Optics} 1994:
+  {Earth} {Observation} and {Astronomy}},   {\bf 2209}, 319--330, SPIE  (1994).
+
+\bibitem{horner_near-infrared_2004}
+S.~D. Horner and M.~J. Rieke, ``The near-infrared camera ({NIRCam}) for the
+  {James} {Webb} {Space} {Telescope} ({JWST}),'' in {\em Optical, {Infrared},
+  and {Millimeter} {Space} {Telescopes}},   {\bf 5487}, 628--634, SPIE  (2004).
+
+\bibitem{Nircam_exoplanet}
+J.~H. Girard, J.~Leisenring, J.~Kammerer, {\em et~al.}, ``{JWST/NIRCam
+  coronagraphy: commissioning and first on-sky results},'' in {\em Space
+  Telescopes and Instrumentation 2022: Optical, Infrared, and Millimeter Wave},
+   L.~E. Coyle, S.~Matsuura, and M.~D. Perrin, Eds.,  {\bf 12180}, 121803Q,
+  International Society for Optics and Photonics, SPIE  (2022).
+
+\bibitem{decadal_survey_on_astronomy_and_astrophysics_2020_astro2020_pathways_2021}
+{Decadal Survey on Astronomy and Astrophysics 2020 (Astro2020)}, {Space Studies
+  Board}, {Board on Physics and Astronomy}, {\em et~al.}, {\em Pathways to
+  {Discovery} in {Astronomy} and {Astrophysics} for the 2020s}, National
+  Academies Press, Washington, D.C.  (2021).
+\newblock Pages: 26141.
+
+\bibitem{Belikov2021}
+R.~Belikov, D.~Sirbu, J.~B. Jewell, {\em et~al.}, ``{Theoretical performance
+  limits for coronagraphs on obstructed and unobstructed apertures: how much
+  can current designs be improved?},'' in {\em Techniques and Instrumentation
+  for Detection of Exoplanets X},  S.~B. Shaklan and G.~J. Ruane, Eds.,  {\bf
+  11823}, 118230W, International Society for Optics and Photonics, SPIE
+  (2021).
+
+\bibitem{shaklan19}
+S.~e.~a. Shaklan, ``Status of space-based segmented-aperture coronagraphs for
+  characterizing exo-earths around sun-like stars,''  (2019).
+
+\bibitem{Howard22}
+J.~M. Howard, K.-C.~A. Liu, M.~Akkerman, {\em et~al.}, ``{Integrated modeling
+  activities for NASA's Roman Space Telescope},'' in {\em Modeling, Systems
+  Engineering, and Project Management for Astronomy X},  G.~Z. Angeli and
+  P.~Dierickx, Eds.,  {\bf 12187}, 121870V, International Society for Optics
+  and Photonics, SPIE  (2022).
+
+\bibitem{Howard11}
+J.~M. Howard, ``{Optical integrated modeling activities for the James Webb
+  Space Telescope (JWST)},'' in {\em Integrated Modeling of Complex
+  Optomechanical Systems},  T.~Andersen and A.~Enmark, Eds.,  {\bf 8336},
+  83360E, International Society for Optics and Photonics, SPIE  (2011).
+
+\bibitem{Krist93}
+J.~{Krist}, ``{Tiny Tim : an HST PSF Simulator},'' in {\em Astronomical Data
+  Analysis Software and Systems II},  R.~J. {Hanisch}, R.~J.~V. {Brissenden},
+  and J.~{Barnes}, Eds., {\em Astronomical Society of the Pacific Conference
+  Series} {\bf 52}, 536  (1993).
+
+\bibitem{Krist07}
+J.~E. Krist, ``{PROPER: an optical propagation library for IDL},'' in {\em
+  Optical Modeling and Performance Predictions III},  M.~A. Kahan, Ed.,  {\bf
+  6675}, 250 -- 258, International Society for Optics and Photonics, SPIE
+  (2007).
+
+\bibitem{Perrin12}
+M.~D. Perrin, R.~Soummer, E.~M. Elliott, {\em et~al.}, ``{Simulating point
+  spread functions for the James Webb Space Telescope with WebbPSF},'' in {\em
+  Space Telescopes and Instrumentation 2012: Optical, Infrared, and Millimeter
+  Wave},  M.~C. Clampin, G.~G. Fazio, H.~A. MacEwen, {\em et~al.}, Eds.,  {\bf
+  8442}, 1193 -- 1203, International Society for Optics and Photonics, SPIE
+  (2012).
+
+\bibitem{2016ascl.soft02018P}
+M.~{Perrin}, J.~{Long}, E.~{Douglas}, {\em et~al.}, ``{POPPY: Physical Optics
+  Propagation in PYthon}.'' Astrophysics Source Code Library, record
+  ascl:1602.018  (2016).
+
+\bibitem{Doug18}
+E.~S. Douglas and M.~D. Perrin, ``{Accelerated modeling of near and far-field
+  diffraction for coronagraphic optical systems},'' in {\em Space Telescopes
+  and Instrumentation 2018: Optical, Infrared, and Millimeter Wave},
+  M.~Lystrup, H.~A. MacEwen, G.~G. Fazio, {\em et~al.}, Eds.,  {\bf 10698}, 864
+  -- 877, International Society for Optics and Photonics, SPIE  (2018).
+
+\bibitem{por2018hcipy}
+E.~H. Por, S.~Y. Haffert, V.~M. Radhakrishnan, {\em et~al.}, ``{High Contrast
+  Imaging for Python (HCIPy): an open-source adaptive optics and coronagraph
+  simulator},'' in {\em Adaptive Optics Systems VI},  {\em Proc. {{SPIE}}} {\bf
+  10703}  (2018).
+
+\bibitem{Townson:19}
+M.~J. Townson, O.~J.~D. Farley, G.~O. de~Xivry, {\em et~al.}, ``Aotools: a
+  python package for adaptive optics modelling and analysis,'' {\em Opt.
+  Express} {\bf 27}, 31316--31329  (2019).
+
+\bibitem{Dube2019}
+B.~Dube, ``prysm: A python optics module,'' {\em Journal of Open Source
+  Software} {\bf 4}(37), 1352  (2019).
+
+\bibitem{Riggs18}
+A.~J.~E. Riggs, G.~Ruane, E.~Sidick, {\em et~al.}, ``{Fast linearized
+  coronagraph optimizer (FALCO) I: a software toolbox for rapid coronagraphic
+  design and wavefront correction},'' in {\em Space Telescopes and
+  Instrumentation 2018: Optical, Infrared, and Millimeter Wave},  M.~Lystrup,
+  H.~A. MacEwen, G.~G. Fazio, {\em et~al.}, Eds.,  {\bf 10698}, 106982V,
+  International Society for Optics and Photonics, SPIE  (2018).
+
+\bibitem{Allen2021OpenSource}
+A.~Allen, ``Scicodes: Astronomy research software and beyond,''  (2021).
+
+\bibitem{krist_practical_2010}
+J.~E. Krist, L.~Pueyo, and S.~B. Shaklan, ``Practical numerical propagation of
+  arbitrary wavefronts through {PIAA} optics,'' 77314N, (San Diego, California,
+  USA)  (2010).
+
+\bibitem{vanderbei_diffraction_2006}
+R.~J. Vanderbei, ``Diffraction {Analysis} of {Two}‐dimensional {Pupil}
+  {Mapping} for {High}‐{Contrast} {Imaging},'' {\em The Astrophysical
+  Journal} {\bf 636}, 528--543  (2006).
+
+\bibitem{guyon_phase_nodate}
+O.~Guyon, B.~Kern, R.~Belikov, {\em et~al.}, ``Phase {Induced} {Amplitude}
+  {Apodization} ({PIAA}) coronagraphy: recent results and future prospects,''
+  6.
+
+\bibitem{krist_numerical_2015}
+J.~Krist, B.~Nemati, and B.~Mennesson, ``Numerical modelling of the proposed
+  {WFIRST}-{AFTA} coronagraphs and their predicted optical performances,''
+  (2015).
+\newblock Number: arXiv:1509.05082 arXiv:1509.05082 [astro-ph].
+
+\bibitem{Nemati2023}
+B.~Nemati, ``Emccd detect.'' \url{https://github.com/wfirst-cgi/emccd_detect}
+  (2023).
+
+\bibitem{Pyxel}
+M.~Arko, T.~Prod'homme, F.~Lemmel, {\em et~al.}, ``{Pyxel 1.0: an open source
+  Python framework for detector and end-to-end instrument simulation},'' in
+  {\em Modeling, Systems Engineering, and Project Management for Astronomy X},
+  G.~Z. Angeli and P.~Dierickx, Eds.,  {\bf 12187}, 1218705, International
+  Society for Optics and Photonics, SPIE  (2022).
+
+\bibitem{pyklip}
+J.~J. {Wang}, J.-B. {Ruffio}, R.~J. {De Rosa}, {\em et~al.}, ``{pyKLIP: PSF
+  Subtraction for Exoplanets and Disks}.'' Astrophysics Source Code Library,
+  record ascl:1506.001  (2015).
+
+\bibitem{nmfimaging}
+B.~Ren, ``nmf\_imaging, doi:
+  \href{https://doi.org/10.5281/zenodo.3738623}{10.5281/zenodo.3738623},''
+  (2020).
+
+\bibitem{Krist18}
+J.~Krist, R.~Effinger, B.~Kern, {\em et~al.}, ``{WFIRST coronagraph flight
+  performance modeling},'' in {\em Space Telescopes and Instrumentation 2018:
+  Optical, Infrared, and Millimeter Wave},  M.~Lystrup, H.~A. MacEwen, G.~G.
+  Fazio, {\em et~al.}, Eds.,  {\bf 10698}, 106982K, International Society for
+  Optics and Photonics, SPIE  (2018).
+
+\bibitem{Greynolds86}
+A.~W. Greynolds, ``{Vector Formulation Of The Ray-Equivalent Method For General
+  Gaussian Beam Propagation},'' in {\em Current Developments in Optical
+  Engineering and Diffraction Phenomena},  R.~E. Fischer, J.~E. Harvey, and
+  W.~J. Smith, Eds.,  {\bf 0679}, 129 -- 133, International Society for Optics
+  and Photonics, SPIE  (1986).
+
+\bibitem{Harvey15}
+J.~E. Harvey, R.~G. Irvin, and R.~N. Pfisterer, ``{Modeling physical optics
+  phenomena by complex ray tracing},'' {\em Optical Engineering} {\bf 54}(3), 1
+  -- 12  (2015).
+
+\bibitem{modeling_coherence_fred}
+``Modeling coherence,'' tech. rep., Photon Engineering.
+
+\bibitem{bsp_in_codev}
+``{CODE V Beam Synthesis Propagation: Obtain Accurate Analysis of
+  Diffraction-Related Characteristics},'' tech. rep., SYNOPSYS  (2010).
+
+\bibitem{Worku17}
+N.~G. Worku and H.~Gross, ``Vectorial field propagation through high {NA}
+  objectives using polarized {Gaussian} beam decomposition,'' in {\em Optical
+  {Trapping} and {Optical} {Micromanipulation} {XIV}},  K.~Dholakia and G.~C.
+  Spalding, Eds., 33, SPIE, (San Diego, United States)  (2017).
+
+\bibitem{Worku:18}
+N.~G. Worku, R.~Hambach, and H.~Gross, ``Decomposition of a field with smooth
+  wavefront into a set of gaussian beams with non-zero curvatures,'' {\em J.
+  Opt. Soc. Am. A} {\bf 35}, 1091--1102  (2018).
+
+\bibitem{Worku19}
+N.~G. Worku and H.~Gross, ``Propagation of truncated gaussian beams and their
+  application in modeling sharp-edge diffraction,'' {\em J. Opt. Soc. Am. A}
+  {\bf 36}, 859--868  (2019).
+
+\bibitem{greynolds_ten_2020}
+A.~W. Greynolds, ``Ten years after (no, not the band): advancements in optical
+  engineering computations over the decade(s),'' in {\em Novel {Optical}
+  {Systems}, {Methods}, and {Applications} {XXIII}},  C.~F. Hahlweg and J.~R.
+  Mulley, Eds., 10, SPIE, (Online Only, United States)  (2020).
+
+\bibitem{Siegman_1986}
+A.~E. Siegman, {\em Lasers}, University Science Books, Mill Valley, CA  (1986).
+\newblock Includes bibliographical references and index.
+
+\bibitem{arnaud_representation_1985}
+J.~Arnaud, ``Representation of {Gaussian} beams by complex rays,'' {\em Applied
+  Optics} {\bf 24}, 538  (1985).
+
+\bibitem{worku_vectorial_2017}
+N.~G. Worku and H.~Gross, ``Vectorial field propagation through high {NA}
+  objectives using polarized {Gaussian} beam decomposition,'' in {\em Optical
+  {Trapping} and {Optical} {Micromanipulation} {XIV}},  K.~Dholakia and G.~C.
+  Spalding, Eds., 33, SPIE, (San Diego, United States)  (2017).
+
+\bibitem{Collins:70}
+S.~A. Collins, ``Lens-system diffraction integral written in terms of matrix
+  optics$\ast$,'' {\em J. Opt. Soc. Am.} {\bf 60}, 1168--1177  (1970).
+
+\bibitem{Worku:20}
+N.~G. Worku and H.~Gross, ``Gaussian pulsed beam decomposition for propagation
+  of ultrashort pulses through optical systems,'' {\em J. Opt. Soc. Am. A} {\bf
+  37}, 98--107  (2020).
+
+\bibitem{Greynolds14}
+A.~W. Greynolds, ``{Fat rays revisited: a synthesis of physical and geometrical
+  optics with Gaußlets},'' in {\em International Optical Design Conference
+  2014},  M.~Figueiro, S.~Lerner, J.~Muschaweck, {\em et~al.}, Eds.,  {\bf
+  9293}, 521 -- 529, International Society for Optics and Photonics, SPIE
+  (2014).
+
+\bibitem{Ashcraft2020}
+J.~N. Ashcraft and E.~S. Douglas, ``An open-source gaussian beamlet
+  decomposition tool for modeling astronomical telescopes,'' {\em Modeling,
+  Systems Engineering, and Project Management for Astronomy IX}   (2020).
+
+\bibitem{Ashcraft_poke_2022}
+J.~Ashcraft, ``{poke v0.1.0}.'' https://zenodo.org/10.5281/zenodo.7117214
+  (2022).
+
+\bibitem{msgpack}
+I.~N. et~al, ``msgpack-python.''
+  \url{https://github.com/msgpack/msgpack-python}  (2023).
+
+\bibitem{rayoptics}
+M.~J. Hayford, ``ray-optics.'' \url{https://github.com/mjhoptics/ray-optics/}
+  (2023).
+
+\bibitem{cai_decentered_nodate}
+Y.~Cai and Q.~Lin, ``Decentered elliptical {Gaussian} beam,'' {\em Applied
+  Optics Vol 41 No 21} , 5  (2002).
+
+\bibitem{Brouwer64}
+W.~Brouwer, ``Matrix methods in optical instrument design.,''  (1964).
+
+\bibitem{Stone:97}
+B.~D. Stone and G.~W. Forbes, ``Differential ray tracing in inhomogeneous
+  media,'' {\em J. Opt. Soc. Am. A} {\bf 14}, 2824--2836  (1997).
+
+\bibitem{koshel_novel_2001}
+R.~J. Koshel, ``Novel methods of intracavity beam shaping,'' 47--57, (San
+  Diego, CA)  (2001).
+
+\bibitem{Mei_2005}
+Z.~Mei, J.~Guo, and D.~Zhao, ``Decentred elliptical
+  laguerre{\textendash}gaussian beam,'' {\em Journal of Optics A: Pure and
+  Applied Optics} {\bf 8}, 77--84  (2005).
+
+\bibitem{CAI2002139}
+Y.~Cai and Q.~Lin, ``The elliptical hermite–gaussian beam and its propagation
+  through paraxial systems,'' {\em Optics Communications} {\bf 207}(1),
+  139--147  (2002).
+
+\bibitem{mawet_annular_2005}
+D.~Mawet, P.~Riaud, O.~Absil, {\em et~al.}, ``Annular {{Groove Phase Mask
+  Coronagraph}},'' {\em ApJ} {\bf 633}, 1191  (2005).
+
+\bibitem{lee_experimental_2006}
+J.~H. Lee, G.~Foo, E.~G. Johnson, {\em et~al.}, ``Experimental {{Verification}}
+  of an {{Optical Vortex Coronagraph}},'' {\em Phys. Rev. Lett.} {\bf 97},
+  053901  (2006).
+
+\bibitem{mawet_vector_2010}
+D.~Mawet, E.~Serabyn, K.~Liewer, {\em et~al.}, ``The {{Vector Vortex
+  Coronagraph}}: {{Laboratory Results}} and {{First Light}} at {{Palomar
+  Observatory}},'' {\em ApJ} {\bf 709}, 53  (2010).
+
+\bibitem{serabyn_vector_2019-1}
+E.~Serabyn, C.~M. Prada, P.~Chen, {\em et~al.}, ``Vector vortex coronagraphy
+  for exoplanet detection with spatially variant diffractive waveplates,'' {\em
+  J. Opt. Soc. Am. B} {\bf 36}, D13  (2019).
+
+\bibitem{lam_numba_2015}
+S.~K. Lam, A.~Pitrou, and S.~Seibert, ``Numba: A llvm-based python jit
+  compiler,'' in {\em Proceedings of the Second Workshop on the LLVM Compiler
+  Infrastructure in HPC},  1--6  (2015).
+
+\bibitem{robert_mcleod_2018_2483274}
+R.~McLeod, F.~Alted, A.~Valentino, {\em et~al.}, ``pydata/numexpr: Numexpr
+  v2.6.9,''  (2018).
+
+\bibitem{Desdoigts2022}
+L.~Desdoigts, B.~Pope, and P.~Tuthill, ``{Optical design, analysis, and
+  calibration using dLux},'' in {\em Space Telescopes and Instrumentation 2022:
+  Optical, Infrared, and Millimeter Wave},  L.~E. Coyle, S.~Matsuura, and M.~D.
+  Perrin, Eds.,  {\bf 12180}, 1218032, International Society for Optics and
+  Photonics, SPIE  (2022).
+
+\bibitem{Wong21}
+A.~{Wong}, B.~{Pope}, L.~{Desdoigts}, {\em et~al.}, ``{Phase retrieval and
+  design with automatic differentiation: tutorial},'' {\em Journal of the
+  Optical Society of America B Optical Physics} {\bf 38}, 2465  (2021).
+
+\bibitem{Pope21}
+B.~J.~S. {Pope}, L.~{Pueyo}, Y.~{Xin}, {\em et~al.}, ``{Kernel Phase and
+  Coronagraphy with Automatic Differentiation},'' {\em \apj} {\bf 907}, 40
+  (2021).
+
+\bibitem{harris2020array}
+C.~R. Harris, K.~J. Millman, S.~J. van~der Walt, {\em et~al.}, ``Array
+  programming with {NumPy},'' {\em Nature} {\bf 585}, 357--362  (2020).
+
+\bibitem{Hunter:2007}
+J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' {\em Computing in
+  Science \& Engineering} {\bf 9}(3), 90--95  (2007).
+
+\bibitem{PER-GRA:2007}
+F.~P\'erez and B.~E. Granger, ``{IP}ython: a system for interactive scientific
+  computing,'' {\em Computing in Science and Engineering} {\bf 9}, 21--29
+  (2007).
+
+\bibitem{astropy:2013}
+{Astropy Collaboration}, T.~P. {Robitaille}, E.~J. {Tollerud}, {\em et~al.},
+  ``{Astropy: A community Python package for astronomy},'' {\em \aap} {\bf
+  558}, A33  (2013).
+
+\bibitem{astropy:2018}
+{Astropy Collaboration}, A.~M. {Price-Whelan}, B.~M. {Sip{\H{o}}cz}, {\em
+  et~al.}, ``{The Astropy Project: Building an Open-science Project and Status
+  of the v2.0 Core Package},'' {\em \aj} {\bf 156}, 123  (2018).
+
+\bibitem{astropy:2022}
+{Astropy Collaboration}, A.~M. {Price-Whelan}, P.~L. {Lim}, {\em et~al.},
+  ``{The Astropy Project: Sustaining and Growing a Community-oriented
+  Open-source Project and the Latest Major Release (v5.0) of the Core
+  Package},'' {\em apj} {\bf 935}, 167  (2022).
+
+\bibitem{2020SciPy-NMeth}
+P.~Virtanen, R.~Gommers, T.~E. Oliphant, {\em et~al.}, ``{{SciPy} 1.0:
+  Fundamental Algorithms for Scientific Computing in Python},'' {\em Nature
+  Methods} {\bf 17}, 261--272  (2020).
+
+\end{thebibliography}

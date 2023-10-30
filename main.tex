@@ -1,0 +1,101 @@
+
+\documentclass[12pt]{spieman}  % 12pt font required by SPIE;
+%\documentclass[a4paper,12pt]{spieman}  % use this instead for A4 paper
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{lineno}
+\usepackage{float}
+
+% We will be using the Changes package for latex to show revisions to the manuscript
+%
+% General interface:
+% 
+% for added text:
+% \added[id=<id>, comment=<comment>]{<new text>}
+% for deleted text:
+% \deleted[id=<id>, comment=<comment>]{<old text>}
+% for replaced text:
+% \replaced[id=<id>, comment=<comment>]{<new text>}{<old text>}
+\usepackage[addedmarkup=uline,deletedmarkup=it,defaultcolor=red]{changes}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\linenumbers
+
+\title{Hybrid propagation physics for the design and modeling of astronomical observatories: a coronagraphic example}
+
+\author[a]{Jaren N. Ashcraft}
+\author[b]{Ewan S. Douglas}
+\author[a,b,c]{Daewook Kim}
+\author[d]{A.J.E. Riggs}
+\affil[a]{James C. Wyant College of Optical Sciences, University of Arizona, Meinel Building 1630 E. University Blvd., Tucson, AZ. 85721, USA}
+\affil[b]{Department of Astronomy and Steward Observatory, University of Arizona, 933 N. Cherry Ave., Tucson, AZ 85721, USA}
+\affil[c]{Large Binocular Telescope Observatory, University Of Arizona, 933 N. Cherry Ave. Tucson, AZ 85721, USA} 
+\affil[d]{Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA 91109, USA}
+
+\renewcommand{\cftdotsep}{\cftnodots}
+\cftpagenumbersoff{figure}
+\cftpagenumbersoff{table} 
+\begin{document} 
+\maketitle
+
+\begin{abstract}
+For diffraction-limited optical systems\added{,} an accurate physical optics model is necessary to properly evaluate instrument performance. Astronomical observatories outfitted with coronagraphs \added{for direct exoplanet imaging} require physical optics models to simulate the effects of misalignment \added{and} diffraction. Accurate knowledge of the observatory's point-spread function (PSF) is integral for the design of high-contrast imaging instruments and simulation of astrophysical observations. The state of the art is to model the misalignment, ray aberration, and diffraction across multiple software packages, which complicates the design process. Gaussian Beamlet Decomposition (GBD) is a ray-based method of diffraction calculation that has been widely implemented in commercial optical design software. By performing the coherent calculation with data from the ray model of the observatory, the ray aberration errors can be fed directly into the physical optics model of the coronagraph, enabling a more integrated  model of the observatory. \added{We develop a formal algorithm for the transfer-matrix method of GBD, and evaluate it against analytical results and a traditional physical optics model to assess the suitability of GBD for high-contrast imaging simulations.} Our GBD simulations of the observatory PSF, when compared to the analytical Airy function, have a sum-normalized RMS difference of $\approx 10^{-6}$. These fields are then propagated through a Fraunhofer model of an exoplanet imaging coronagraph where the mean residual numerical contrast is \added{4 $\times 10^{-11}$}, \added{with a maximum near the inner working angle at 5 $\times 10^{-9}$.} \added{These results show considerable promise for the future development of GBD as a viable propagation technique in high-contrast imaging.} \added{We developed this algorithm in an open-source software package and outlined a path for its continued development to increase the accuracy and flexibility of diffraction simulations using GBD.}
+
+\end{abstract}
+
+
+
+% Include a list of up to six keywords after the abstract
+\keywords{physical optics modeling, coronagraphs, exoplanets, high-contrast imaging, diffraction, Gaussian Beamlet Decomposition}
+
+% Include email contact information for corresponding author
+{\noindent \footnotesize\textbf{*}Jaren N. Ashcraft,  \linkable{jashcraft@arizona.edu}, Ewan S. Douglas, douglase@arizona.edu }
+
+\begin{spacing}{2}   % use double spacing for rest of manuscript
+
+\input{section1} % Introduction
+
+\input{section2} % Methods
+
+\input{section3} % Mathematical Algorithm
+
+\input{section4} % Results
+
+\input{section5} % Conclusion
+
+
+%%%%% References %%%%%
+
+\bibliography{report,ewan_bib}   % bibliography data in report.bib
+\bibliographystyle{spiejour}   % makes bibtex use spiejour.bst
+
+\section{Acknowledgments}
+This work benefited greatly from the insight of Dr. Norman Girma Worku, who pioneered the development of the transfer-matrix method of Gaussian Beamlet Decomposition. We thank Trenton Brendel, Weslin Pulin, and Brandon Dube for helpful discussion on the fundamental physics and design of the Poke API. Thanks to Kian Milani for the guidance with matplotlib. Thanks to Marcos Esparza, Kevin Derby, Hyukmo Kang, and Ramya Anche for help proof-reading this manuscript. Thanks to Sebastiaan Haffert for guidance on the use of HCIPy's VortexCoronagraph model. This research made use of several open-source Python packages, including POPPY\cite{Perrin12}, HCIPy\cite{por2018hcipy}, prsym\cite{Dube2019}, numpy\cite{harris2020array}, matplotlib\cite{Hunter:2007}, ipython\cite{PER-GRA:2007}, astropy\footnote{http://www.astropy.org} \cite{astropy:2013, astropy:2018, astropy:2022},  scipy\cite{2020SciPy-NMeth}, numba\cite{lam_numba_2015}, and numexpr\cite{robert_mcleod_2018_2483274}. This research made use of High Performance Computing (HPC) resources supported by the University of Arizona TRIF (Technology and Research Initiative Fund), UITS, and Research, Innovation, and Impact (RII) and maintained by the UArizona Research Technologies department. This work was supported by a NASA Space Technology Graduate Research Opportunity.
+
+%%%%% Biographies of authors %%%%%
+
+\vspace{2ex}\noindent\textbf{Jaren N. Ashcraft} (He/They) is a Ph.D. Candidate at the University of Arizona's Wyant College of Optical Sciences working with the UA Space Astrophysics Laboratory and Large Optics Fabrication and Testing Group. He received his B.S. degree in Optical Engineering from the University of Rochester in 2019, and M.S. degree in Optical Sciences from the University of Arizona in 2022. He is a recipient of a NASA Space Technology Graduate Research Opportunities award.
+
+
+\vspace{2ex}\noindent\textbf{Ewan S. Douglas (He/they)}  is an Assistant Professor of Astronomy at the University of Arizona, and an Assistant Astronomer, Steward Observatory. Ewan completed a postdoctoral appointment at the Massachusetts Institute of Technology Department of Aeronautics and Astronautics, received master's and doctoral degrees in Astronomy from Boston University, and a bachelor's degree in physics from Tufts University.  Dr. Douglas' specializes in space telescopes and instrumentation for high-contrast imaging of debris disks and extrasolar planets.
+
+\vspace{2ex}\noindent\textbf{Daewook Kim} is a faculty of optical sciences and astronomy at the University of Arizona. His research area covers precision optical engineering, optics fabrication, and freeform metrology including interferometry and deflectometry. He is the chair of the Optical Manufacturing and Testing (SPIE) and Optical Fabrication and Testing (OPTICA) conferences. He has served as an associate editor for the Optics Express journal. He is a senior member of OPTICA and SPIE Fellow.
+
+\vspace{2ex}\noindent\textbf{Dr. A J Eldorado Riggs} is an optical engineer at the Jet Propulsion Laboratory. His research focuses on the high-contrast imaging of exoplanets, in particular mask optimization and wavefront sensing and control for the Coronagraph Instrument on the Nancy Grace Roman Space Telescope. He received his B.S. in physics and mechanical engineering from Yale University in 2011 and his Ph.D. in mechanical and aerospace engineering from Princeton University in 2016.
+
+
+\vspace{1ex}
+
+\listoffigures
+\listoftables
+
+\end{spacing}
+\end{document}
