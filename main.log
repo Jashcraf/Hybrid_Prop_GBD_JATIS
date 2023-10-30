@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.16)  30 OCT 2023 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.16)  30 OCT 2023 14:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -374,27 +374,8 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cfttabindent=\skip84
 \cfttabnumwidth=\skip85
 )
-(C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.st
-y
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count285
-\output=\toks24
-\linenoprevgraf=\count286
-\linenumbersep=\dimen154
-\linenumberwidth=\dimen155
-\c@linenumber=\count287
-\c@pagewiselinenumber=\count288
-\c@LN@truepage=\count289
-\c@internallinenumber=\count290
-\c@internallinenumbers=\count291
-\quotelinenumbersep=\dimen156
-\bframerule=\dimen157
-\bframesep=\dimen158
-\bframebox=\box54
-LaTeX Info: Redefining \\ on input line 3056.
-)
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
-6.
+3.
 
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -402,44 +383,44 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
 end-pdftex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count292
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count285
+\l__pdf_internal_box=\box54
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
 -pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
-\scratchdimen=\dimen159
-\scratchbox=\box56
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count296
-\MPscratchDim=\dimen160
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count286
+\scratchdimen=\dimen154
+\scratchbox=\box55
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen155
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks25
 )
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
 topdf-base.sty
@@ -451,7 +432,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 f-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 46.
+Package hyperref Info: Link coloring ON on input line 43.
 
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref
 .sty
@@ -465,11 +446,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 \gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count299
+\c@section@level=\count292
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -477,19 +458,13 @@ LaTeX Info: Redefining \nameref on input line 46.
 
 ptm-font_in_spiemancls
 12pt
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 4
-7.
-
-(C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
-File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
 
 
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
 
 
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -503,51 +478,51 @@ Overfull \hbox (21.05423pt too wide) in paragraph at lines 9--11
  []
 
 [3] [4]
-<modeling_flow.png, id=194, 1122.1925pt x 435.6275pt>
+<modeling_flow.png, id=193, 1122.1925pt x 435.6275pt>
 File: modeling_flow.png Graphic file (type png)
 <use modeling_flow.png>
 Package pdftex.def Info: modeling_flow.png  used on input line 24.
 (pdftex.def)             Requested size: 469.75499pt x 182.35075pt.
  [5] [6 <./modeling_flow.png>]
-<beamlet_decomposition_essentials.png, id=234, 1179.40625pt x 313.17pt>
+<beamlet_decomposition_essentials.png, id=233, 1179.40625pt x 313.17pt>
 File: beamlet_decomposition_essentials.png Graphic file (type png)
 <use beamlet_decomposition_essentials.png>
 Package pdftex.def Info: beamlet_decomposition_essentials.png  used on input li
 ne 36.
 (pdftex.def)             Requested size: 469.75499pt x 124.73535pt.
  [7 <./beamlet_decomposition_essentials.png>] [8] [9]
-<hybridprop2.png, id=274, 1420.30624pt x 701.11937pt>
+<hybridprop2.png, id=273, 1420.30624pt x 701.11937pt>
 File: hybridprop2.png Graphic file (type png)
 <use hybridprop2.png>
 Package pdftex.def Info: hybridprop2.png  used on input line 56.
 (pdftex.def)             Requested size: 469.75499pt x 231.8836pt.
  [10] [11 <./hybridprop2.png>]
-<poke_modeling_revised.png, id=291, 882.29625pt x 178.6675pt>
+<poke_modeling_revised.png, id=290, 882.29625pt x 178.6675pt>
 File: poke_modeling_revised.png Graphic file (type png)
 <use poke_modeling_revised.png>
 Package pdftex.def Info: poke_modeling_revised.png  used on input line 68.
 (pdftex.def)             Requested size: 422.77661pt x 85.6122pt.
 ) [12 <./poke_modeling_revised.png>]
 (section2.tex [13] [14] [15] [16] [17]
-<differential_diagram_2.png, id=372, 991.705pt x 516.93124pt>
+<differential_diagram_2.png, id=371, 991.705pt x 516.93124pt>
 File: differential_diagram_2.png Graphic file (type png)
 <use differential_diagram_2.png>
 Package pdftex.def Info: differential_diagram_2.png  used on input line 131.
 (pdftex.def)             Requested size: 375.80542pt x 195.89165pt.
  [18] [19 <./differential_diagram_2.png>] [20] [21]
-<sampleschemes.pdf, id=419, 1084.05pt x 361.35pt>
+<sampleschemes.pdf, id=418, 1084.05pt x 361.35pt>
 File: sampleschemes.pdf Graphic file (type pdf)
 <use sampleschemes.pdf>
 Package pdftex.def Info: sampleschemes.pdf  used on input line 219.
 (pdftex.def)             Requested size: 469.75499pt x 156.58498pt.
 ) (section3.tex [22 <./sampleschemes.pdf>]
-<gbd_prop_diagram.png, id=468, 1042.89626pt x 516.93124pt>
+<gbd_prop_diagram.png, id=467, 1042.89626pt x 516.93124pt>
 File: gbd_prop_diagram.png Graphic file (type png)
 <use gbd_prop_diagram.png>
 Package pdftex.def Info: gbd_prop_diagram.png  used on input line 7.
 (pdftex.def)             Requested size: 469.75499pt x 232.84564pt.
  [23 <./gbd_prop_diagram.png>] [24] [25] [26] [27] [28]) [29] (section4.tex
-<telescope_model.png, id=561, 1184.425pt x 338.26375pt>
+<telescope_model.png, id=560, 1184.425pt x 338.26375pt>
 File: telescope_model.png Graphic file (type png)
 <use telescope_model.png>
 Package pdftex.def Info: telescope_model.png  used on input line 22.
@@ -559,44 +534,44 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
 (C:\Users\UASAL-OPTICS\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [32]
-<Airy_compare_Even.pdf, id=594, 1084.05pt x 1084.05pt>
+<Airy_compare_Even.pdf, id=593, 1084.05pt x 1084.05pt>
 File: Airy_compare_Even.pdf Graphic file (type pdf)
 <use Airy_compare_Even.pdf>
 Package pdftex.def Info: Airy_compare_Even.pdf  used on input line 46.
 (pdftex.def)             Requested size: 469.75499pt x 469.75496pt.
  [33]
-<Airy_compare_Fib.pdf, id=601, 1084.05pt x 1084.05pt>
+<Airy_compare_Fib.pdf, id=600, 1084.05pt x 1084.05pt>
 File: Airy_compare_Fib.pdf Graphic file (type pdf)
 <use Airy_compare_Fib.pdf>
 Package pdftex.def Info: Airy_compare_Fib.pdf  used on input line 53.
 (pdftex.def)             Requested size: 469.75499pt x 469.75496pt.
  [34 <./Airy_compare_Even.pdf>] [35 <./Airy_compare_Fib.pdf>]
-<rms_vs_nbeamlets.pdf, id=768, 722.7pt x 361.35pt>
+<rms_vs_nbeamlets.pdf, id=767, 722.7pt x 361.35pt>
 File: rms_vs_nbeamlets.pdf Graphic file (type pdf)
 <use rms_vs_nbeamlets.pdf>
 Package pdftex.def Info: rms_vs_nbeamlets.pdf  used on input line 62.
 (pdftex.def)             Requested size: 469.75499pt x 234.88023pt.
 
 [36 <./rms_vs_nbeamlets.pdf>]
-<hst_aberrated_psf.png, id=817, 920.43875pt x 315.1775pt>
+<hst_aberrated_psf.png, id=816, 920.43875pt x 315.1775pt>
 File: hst_aberrated_psf.png Graphic file (type png)
 <use hst_aberrated_psf.png>
 Package pdftex.def Info: hst_aberrated_psf.png  used on input line 73.
 (pdftex.def)             Requested size: 422.77661pt x 144.7718pt.
  [37 <./hst_aberrated_psf.png>] [38]
-<coronagraph_vs_beamlets.png, id=841, 1011.78pt x 794.97pt>
+<coronagraph_vs_beamlets.png, id=840, 1011.78pt x 794.97pt>
 File: coronagraph_vs_beamlets.png Graphic file (type png)
 <use coronagraph_vs_beamlets.png>
 Package pdftex.def Info: coronagraph_vs_beamlets.png  used on input line 103.
 (pdftex.def)             Requested size: 422.77661pt x 386.53041pt.
  [39 <./coronagraph_vs_beamlets.png>] [40]) (section5.tex [41] [42] [43] [44]
-<gbdprofiling.png, id=898, 1046.91125pt x 780.9175pt>
+<gbdprofiling.png, id=897, 1046.91125pt x 780.9175pt>
 File: gbdprofiling.png Graphic file (type png)
 <use gbdprofiling.png>
 Package pdftex.def Info: gbdprofiling.png  used on input line 55.
 (pdftex.def)             Requested size: 328.82706pt x 245.27536pt.
  [45]
-<runtime_vs_beamlets.png, id=909, 605.26125pt x 340.27126pt>
+<runtime_vs_beamlets.png, id=908, 605.26125pt x 340.27126pt>
 File: runtime_vs_beamlets.png Graphic file (type png)
 <use runtime_vs_beamlets.png>
 Package pdftex.def Info: runtime_vs_beamlets.png  used on input line 63.
@@ -620,13 +595,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 53FCE8EB21891231D1A80DE6EA724D80;5133.
  ) 
 Here is how much of TeX's memory you used:
- 10551 strings out of 478864
- 157321 string characters out of 2845342
- 480243 words of memory out of 3000000
- 28042 multiletter control sequences out of 15000+600000
- 431206 words of font info for 90 fonts, out of 8000000 for 9000
+ 10284 strings out of 478864
+ 153259 string characters out of 2845342
+ 472541 words of memory out of 3000000
+ 27784 multiletter control sequences out of 15000+600000
+ 429446 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,80p,2173b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,80p,2173b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/UASAL-OPTICS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.
 enc}<C:/Users/UASAL-OPTICS/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/UASAL-OPTICS/AppData/Local/Programs/MiKTeX/fonts/
@@ -650,13 +625,12 @@ b><C:/Users/UASAL-OPTICS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb><C:/Users/UASAL-OPTICS/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/UASAL-OPTICS/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/UASAL-OPTICS/AppData/Local/P
-rograms/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/UASAL-OPTICS/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/UASAL-OPTIC
-S/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/UASA
-L-OPTICS/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (59 pages, 3190458 bytes).
+rograms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/UASAL-OPTICS/AppData/
+Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/UASAL-OPTICS/A
+ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (59 pages, 3178534 bytes).
 PDF statistics:
- 1151 PDF objects out of 1200 (max. 8388607)
+ 1146 PDF objects out of 1200 (max. 8388607)
  220 named destinations out of 1000 (max. 500000)
  268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
